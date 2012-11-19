@@ -1,10 +1,14 @@
 # Freerider API
 
 Detta inofficiella Hertz Freerider PHP API erbjuder möjligheten att hämta information om lediga hyrbilar.
-För tillfället går det ej att boka bilar, något som är planerat att implementeras vid ett senare tillfälle.
+Funktionalitet som ev tillkommer senare:
+- Tillhandahålla länk till boknings-sidan för respektive bil
+- Tillhandahålla information om hertz-stationerna
+- Funktionalitet för bokning
+
 
 ## Vad är Hertz Freerider?
-Hertz Freerider är en tjänst som erbjuder gratis one-way-transfers från olika Hertz-stationer i Sverige.
+[Hertz Freerider](http://www.hertzfreerider.se) är en tjänst som erbjuder gratis one-way-transfers från och till olika Hertz-stationer i Sverige.
 
 ## Funktionalitet
 För att hämta aktuella hyrbilar tillhandahåller APIet tre metoder med följande funktionalitet
