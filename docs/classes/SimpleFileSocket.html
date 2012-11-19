@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \SimpleFileSocket</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Opens a socket for reading and writing."><span class="description">Opens a socket for reading and writing.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method_clearError" title="clearError :: Resets the error state to no error."><span class="description">Resets the error state to no error.</span><pre>clearError()</pre></a></li>
+<li class="method public "><a href="#method_close" title="close :: Closes the socket preventing further reads."><span class="description">Closes the socket preventing further reads.</span><pre>close()</pre></a></li>
+<li class="method public inherited"><a href="#method_getError" title="getError :: Accessor for an outstanding error."><span class="description">Accessor for an outstanding error.</span><pre>getError()</pre></a></li>
+<li class="method public "><a href="#method_getSent" title="getSent :: Accessor for content so far."><span class="description">Accessor for content so far.</span><pre>getSent()</pre></a></li>
+<li class="method public inherited"><a href="#method_isError" title="isError :: Test for an outstanding error."><span class="description">Test for an outstanding error.</span><pre>isError()</pre></a></li>
+<li class="method public "><a href="#method_isOpen" title="isOpen :: Accessor for socket open state."><span class="description">Accessor for socket open state.</span><pre>isOpen()</pre></a></li>
+<li class="method public "><a href="#method_read" title="read :: Reads data from the socket."><span class="description">Reads data from the socket.</span><pre>read()</pre></a></li>
+<li class="method public inherited"><a href="#method_setError" title="setError :: Sets the internal error."><span class="description">Sets the internal error.</span><pre>setError()</pre></a></li>
+<li class="method public "><a href="#method_write" title="write :: Writes some data to the socket and saves alocal copy."><span class="description">Writes some data to the socket and saves alocal copy.</span><pre>write()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_openFile" title="openFile :: Actually opens the low level socket."><span class="description">Actually opens the low level socket.</span><pre>openFile()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_block_size" title="$block_size :: "><span class="description"></span><pre>$block_size</pre></a></li>
+<li class="property private inherited"><a href="#property_error" title="$error :: "><span class="description"></span><pre>$error</pre></a></li>
+<li class="property private "><a href="#property_handle" title="$handle :: "><span class="description"></span><pre>$handle</pre></a></li>
+<li class="property private "><a href="#property_is_open" title="$is_open :: "><span class="description"></span><pre>$is_open</pre></a></li>
+<li class="property private "><a href="#property_sent" title="$sent :: "><span class="description"></span><pre>$sent</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\SimpleFileSocket"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/SimpleFileSocket.html">SimpleFileSocket</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Stashes an error for later.</p>
+<div class="details">
+<div class="long_description"><p>Useful for constructors
+   until PHP gets exceptions.</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html">SimpleTest
+   @subpackage WebTester</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Opens a socket for reading and writing.</h2>
+<pre>__construct($file, integer $block_size) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleUrl $file       Target URI to fetch.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+<div class="subelement argument">
+<h4>$block_size</h4>
+<code>integer</code><p>Size of chunk to read. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_clearError"></a><div class="element clickable method public method_clearError" data-toggle="collapse" data-target=".method_clearError .collapse">
+<h2>Resets the error state to no error.</h2>
+<pre>clearError() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@access protected</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleStickyError::clearError()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_close"></a><div class="element clickable method public method_close" data-toggle="collapse" data-target=".method_close .collapse">
+<h2>Closes the socket preventing further reads.</h2>
+<pre>close() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Cannot be reopened once closed.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if successful.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_getError"></a><div class="element clickable method public method_getError" data-toggle="collapse" data-target=".method_getError .collapse">
+<h2>Accessor for an outstanding error.</h2>
+<pre>getError() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return string     Empty string if no error otherwise
+                      the error message.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleStickyError::getError()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getSent"></a><div class="element clickable method public method_getSent" data-toggle="collapse" data-target=".method_getSent .collapse">
+<h2>Accessor for content so far.</h2>
+<pre>getSent() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return string        Bytes sent only.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isError"></a><div class="element clickable method public method_isError" data-toggle="collapse" data-target=".method_isError .collapse">
+<h2>Test for an outstanding error.</h2>
+<pre>isError() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean           True if there is an error.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleStickyError::isError()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_isOpen"></a><div class="element clickable method public method_isOpen" data-toggle="collapse" data-target=".method_isOpen .collapse">
+<h2>Accessor for socket open state.</h2>
+<pre>isOpen() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean           True if open.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_read"></a><div class="element clickable method public method_read" data-toggle="collapse" data-target=".method_read .collapse">
+<h2>Reads data from the socket.</h2>
+<pre>read() : \integer/boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The error suppresion
+   is a workaround for PHP4 always throwing a warning
+   with a secure socket.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\integer/boolean</code>Incoming bytes. False
+                                    on error.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_setError"></a><div class="element clickable method public method_setError" data-toggle="collapse" data-target=".method_setError .collapse">
+<h2>Sets the internal error.</h2>
+<pre>setError($error) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string       Error message to stash.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleStickyError::setError()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$error</h4></div>
+</div></div>
+</div>
+<a id="method_write"></a><div class="element clickable method public method_write" data-toggle="collapse" data-target=".method_write .collapse">
+<h2>Writes some data to the socket and saves alocal copy.</h2>
+<pre>write($message) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $message       String to send to socket.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$message</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if successful.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_openFile"></a><div class="element clickable method protected method_openFile" data-toggle="collapse" data-target=".method_openFile .collapse">
+<h2>Actually opens the low level socket.</h2>
+<pre>openFile($file, string $error) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleUrl $file       SimpleUrl file target.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+<div class="subelement argument">
+<h4>$error</h4>
+<code>string</code><p>Recipient of error message. @param integer $timeout Maximum time to wait for connection. @access protected</p>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_block_size"> </a><div class="element clickable property private property_block_size" data-toggle="collapse" data-target=".property_block_size .collapse">
+<h2></h2>
+<pre>$block_size </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_error"> </a><div class="element clickable property private property_error" data-toggle="collapse" data-target=".property_error .collapse">
+<h2></h2>
+<pre>$error </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleStickyError::$$error</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_handle"> </a><div class="element clickable property private property_handle" data-toggle="collapse" data-target=".property_handle .collapse">
+<h2></h2>
+<pre>$handle </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_is_open"> </a><div class="element clickable property private property_is_open" data-toggle="collapse" data-target=".property_is_open .collapse">
+<h2></h2>
+<pre>$is_open </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_sent"> </a><div class="element clickable property private property_sent" data-toggle="collapse" data-target=".property_sent .collapse">
+<h2></h2>
+<pre>$sent </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:14+01:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \SimpleDumper</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_clipString" title="clipString :: Clips a string to a maximum length."><span class="description">Clips a string to a maximum length.</span><pre>clipString()</pre></a></li>
+<li class="method public "><a href="#method_describeDifference" title="describeDifference :: Creates a human readable description of the
+   difference between two variables."><span class="description">Creates a human readable description of the
+   difference between two variables.</span><pre>describeDifference()</pre></a></li>
+<li class="method public "><a href="#method_describeValue" title="describeValue :: Renders a variable in a shorter form than print_r()."><span class="description">Renders a variable in a shorter form than print_r().</span><pre>describeValue()</pre></a></li>
+<li class="method public "><a href="#method_dump" title="dump :: Sends a formatted dump of a variable to a string."><span class="description">Sends a formatted dump of a variable to a string.</span><pre>dump()</pre></a></li>
+<li class="method public "><a href="#method_getType" title="getType :: Gets the string representation of a type."><span class="description">Gets the string representation of a type.</span><pre>getType()</pre></a></li>
+<li class="method public "><a href="#method_unmangle" title="unmangle :: Removes crud from property name after it's been converted
+   to an array."><span class="description">Removes crud from property name after it's been converted
+   to an array.</span><pre>unmangle()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_describeArrayDifference" title="describeArrayDifference :: Creates a human readable description of the
+   difference between two arrays."><span class="description">Creates a human readable description of the
+   difference between two arrays.</span><pre>describeArrayDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeBooleanDifference" title="describeBooleanDifference :: Creates a human readable description of the
+   difference between a boolean and another variable."><span class="description">Creates a human readable description of the
+   difference between a boolean and another variable.</span><pre>describeBooleanDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeFloatDifference" title="describeFloatDifference :: Creates a human readable description of the
+   difference between two floating point numbers."><span class="description">Creates a human readable description of the
+   difference between two floating point numbers.</span><pre>describeFloatDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeGenericDifference" title="describeGenericDifference :: Creates a human readable description of the
+   difference between two variables."><span class="description">Creates a human readable description of the
+   difference between two variables.</span><pre>describeGenericDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeIntegerDifference" title="describeIntegerDifference :: Creates a human readable description of the
+   difference between an integer and another variable."><span class="description">Creates a human readable description of the
+   difference between an integer and another variable.</span><pre>describeIntegerDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeNullDifference" title="describeNullDifference :: Creates a human readable description of the
+   difference between a null and another variable."><span class="description">Creates a human readable description of the
+   difference between a null and another variable.</span><pre>describeNullDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeObjectDifference" title="describeObjectDifference :: Creates a human readable description of the
+   difference between two objects."><span class="description">Creates a human readable description of the
+   difference between two objects.</span><pre>describeObjectDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeResourceDifference" title="describeResourceDifference :: Creates a human readable description of the
+   difference between a resource and another variable."><span class="description">Creates a human readable description of the
+   difference between a resource and another variable.</span><pre>describeResourceDifference()</pre></a></li>
+<li class="method protected "><a href="#method_describeStringDifference" title="describeStringDifference :: Creates a human readable description of the
+   difference between a string and another variable."><span class="description">Creates a human readable description of the
+   difference between a string and another variable.</span><pre>describeStringDifference()</pre></a></li>
+<li class="method protected "><a href="#method_getMembers" title="getMembers :: Get all members of an object including private and protected ones."><span class="description">Get all members of an object including private and protected ones.</span><pre>getMembers()</pre></a></li>
+<li class="method protected "><a href="#method_isMatchingKeys" title="isMatchingKeys :: Compares two arrays to see if their key lists match."><span class="description">Compares two arrays to see if their key lists match.</span><pre>isMatchingKeys()</pre></a></li>
+<li class="method protected "><a href="#method_isTypeMatch" title="isTypeMatch :: Tests to see if types match."><span class="description">Tests to see if types match.</span><pre>isTypeMatch()</pre></a></li>
+<li class="method protected "><a href="#method_stringDiffersAt" title="stringDiffersAt :: Find the first character position that differs
+   in two strings by binary chop."><span class="description">Find the first character position that differs
+   in two strings by binary chop.</span><pre>stringDiffersAt()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_getPrivatePropertyNoMatterWhat" title="getPrivatePropertyNoMatterWhat :: Extracts a private member's value when reflection won't play ball."><span class="description">Extracts a private member's value when reflection won't play ball.</span><pre>getPrivatePropertyNoMatterWhat()</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\SimpleDumper"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/SimpleDumper.html">SimpleDumper</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Displays variables as text and does diffs.</p>
+<div class="details">
+<div class="long_description"><p>@package  SimpleTest</p></div>
+<table class="table table-bordered"><tr>
+<th>subpackage</th>
+<td>UnitTester</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_clipString"></a><div class="element clickable method public method_clipString" data-toggle="collapse" data-target=".method_clipString .collapse">
+<h2>Clips a string to a maximum length.</h2>
+<pre>clipString($value, integer $size, $position) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $value         String to truncate.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$size</h4>
+<code>integer</code><p>Minimum string size to show. @param integer $position Centre of string section. @return string Shortened version. @access public</p>
+</div>
+<div class="subelement argument"><h4>$position</h4></div>
+</div></div>
+</div>
+<a id="method_describeDifference"></a><div class="element clickable method public method_describeDifference" data-toggle="collapse" data-target=".method_describeDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between two variables.</h2>
+<pre>describeDifference(mixed $first, $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Uses a
+   dynamic call.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>First variable. @param mixed $second Value to compare with. @param boolean $identical If true then type anomolies count. @return string Description of difference. @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeValue"></a><div class="element clickable method public method_describeValue" data-toggle="collapse" data-target=".method_describeValue .collapse">
+<h2>Renders a variable in a shorter form than print_r().</h2>
+<pre>describeValue($value) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $value      Variable to render as a string.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Human readable string form.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_dump"></a><div class="element clickable method public method_dump" data-toggle="collapse" data-target=".method_dump .collapse">
+<h2>Sends a formatted dump of a variable to a string.</h2>
+<pre>dump($variable) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $variable    Variable to display.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$variable</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Output from print_r().
+   @access public</div>
+</div></div>
+</div>
+<a id="method_getType"></a><div class="element clickable method public method_getType" data-toggle="collapse" data-target=".method_getType .collapse">
+<h2>Gets the string representation of a type.</h2>
+<pre>getType($value) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $value    Variable to check against.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Type.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_unmangle"></a><div class="element clickable method public method_unmangle" data-toggle="collapse" data-target=".method_unmangle .collapse">
+<h2>Removes crud from property name after it's been converted
+   to an array.</h2>
+<pre>unmangle($mangled) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $mangled     Name from array cast.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mangled</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Cleaned up name.</div>
+</div></div>
+</div>
+<a id="method_describeArrayDifference"></a><div class="element clickable method protected method_describeArrayDifference" data-toggle="collapse" data-target=".method_describeArrayDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between two arrays.</h2>
+<pre>describeArrayDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $first         First array.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Array to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeBooleanDifference"></a><div class="element clickable method protected method_describeBooleanDifference" data-toggle="collapse" data-target=".method_describeBooleanDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between a boolean and another variable.</h2>
+<pre>describeBooleanDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param boolean $first       First boolean.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Boolean to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeFloatDifference"></a><div class="element clickable method protected method_describeFloatDifference" data-toggle="collapse" data-target=".method_describeFloatDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between two floating point numbers.</h2>
+<pre>describeFloatDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param float $first         First float.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Float to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeGenericDifference"></a><div class="element clickable method protected method_describeGenericDifference" data-toggle="collapse" data-target=".method_describeGenericDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between two variables.</h2>
+<pre>describeGenericDifference(null $first, $second) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The minimal
+   version.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>null</code><p>First value. @param mixed $second Value to compare with. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+</div></div>
+</div>
+<a id="method_describeIntegerDifference"></a><div class="element clickable method protected method_describeIntegerDifference" data-toggle="collapse" data-target=".method_describeIntegerDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between an integer and another variable.</h2>
+<pre>describeIntegerDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $first       First number.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Number to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeNullDifference"></a><div class="element clickable method protected method_describeNullDifference" data-toggle="collapse" data-target=".method_describeNullDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between a null and another variable.</h2>
+<pre>describeNullDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param null $first          First null.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Null to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeObjectDifference"></a><div class="element clickable method protected method_describeObjectDifference" data-toggle="collapse" data-target=".method_describeObjectDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between two objects.</h2>
+<pre>describeObjectDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $first        First object.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Object to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description.</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeResourceDifference"></a><div class="element clickable method protected method_describeResourceDifference" data-toggle="collapse" data-target=".method_describeResourceDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between a resource and another variable.</h2>
+<pre>describeResourceDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param resource $first       First resource.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Resource to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_describeStringDifference"></a><div class="element clickable method protected method_describeStringDifference" data-toggle="collapse" data-target=".method_describeStringDifference .collapse">
+<h2>Creates a human readable description of the
+   difference between a string and another variable.</h2>
+<pre>describeStringDifference($first, mixed $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $first        First string.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>String to compare with. @param boolean $identical If true then type anomolies count. @return string Human readable description. @access private</p>
+</div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_getMembers"></a><div class="element clickable method protected method_getMembers" data-toggle="collapse" data-target=".method_getMembers .collapse">
+<h2>Get all members of an object including private and protected ones.</h2>
+<pre>getMembers(object $object) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>A safer form of casting to an array.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$object</h4>
+<code>object</code><p>Object to list members of, including private ones. @return array Names and values in the object.</p>
+</div>
+</div></div>
+</div>
+<a id="method_isMatchingKeys"></a><div class="element clickable method protected method_isMatchingKeys" data-toggle="collapse" data-target=".method_isMatchingKeys .collapse">
+<h2>Compares two arrays to see if their key lists match.</h2>
+<pre>isMatchingKeys(array $first, $second, $identical) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>For an identical match, the ordering and types of the keys
+   is significant.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>array</code><p>First array. @param array $second Array to compare with. @param boolean $identical If true then type anomolies count. @return boolean True if matching. @access private</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$identical</h4></div>
+</div></div>
+</div>
+<a id="method_isTypeMatch"></a><div class="element clickable method protected method_isTypeMatch" data-toggle="collapse" data-target=".method_isTypeMatch .collapse">
+<h2>Tests to see if types match.</h2>
+<pre>isTypeMatch($first, mixed $second) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $first        First variable.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Value to compare with. @return boolean True if matches. @access private</p>
+</div>
+</div></div>
+</div>
+<a id="method_stringDiffersAt"></a><div class="element clickable method protected method_stringDiffersAt" data-toggle="collapse" data-target=".method_stringDiffersAt .collapse">
+<h2>Find the first character position that differs
+   in two strings by binary chop.</h2>
+<pre>stringDiffersAt($first, string $second) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $first        First string.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>string</code><p>String to compare with. @return integer Position of first differing character. @access private</p>
+</div>
+</div></div>
+</div>
+<a id="method_getPrivatePropertyNoMatterWhat"></a><div class="element clickable method private method_getPrivatePropertyNoMatterWhat" data-toggle="collapse" data-target=".method_getPrivatePropertyNoMatterWhat .collapse">
+<h2>Extracts a private member's value when reflection won't play ball.</h2>
+<pre>getPrivatePropertyNoMatterWhat($name, object $object) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $name        Property name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument">
+<h4>$object</h4>
+<code>object</code><p>Object to read. @return mixed Value of property.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:03+01:00.<br></footer></div>
+</div>
+</body>
+</html>

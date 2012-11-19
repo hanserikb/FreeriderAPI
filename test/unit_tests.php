@@ -88,7 +88,7 @@ class FreeriderAPITests extends UnitTestCase
         $this->assertIsA($result[0], "Freerider", "Array didnt contain Freerider object");
 
         // The array contains a Freerider object with Destination property containing "Stockholm"
-        $this->assertPattern("stockholm", $result[0]->destination, "Destination is not Stockholm");
+        $this->assertPattern("/Stockholm/i", $result[0]->destination, "Destination is not Stockholm");
     }
 
     /*
@@ -96,8 +96,28 @@ class FreeriderAPITests extends UnitTestCase
      */
     function testGetOrigin()
     {
-        // Gör ett anrop med "Stockholm" som argument
+        // Make a request to the API with "Stockholm" as search parameter
+        $result = $this->freeriderAPI->getOrigin("Stockholm");
 
-        // Få tillbaka minst ett resultat innehållandes "Stockholm" som startpunkt
+        // Return an array
+        $this->assertEqual(is_array($result), "Did not return an array");
+
+        // The array contains something
+        $this->assertEqual(count($result) > 0, "Array didnt contain anything");
+
+        // The array contains a Freerider object
+        $this->assertIsA($result[0], "Freerider", "Array didnt contain Freerider object");
+
+        // The array contains a Freerider object with Origin property containing "Stockholm"
+        $this->assertPattern("/Stockholm/i", $result[0]->origin, "Origin is not Stockholm");
+    }
+
+    function tesGetOriginIncorrectSearch()
+    {
+        // Make a request to the API with "Stockholm" as search parameter
+        $result = $this->freeriderAPI->getOrigin("ajhsdbahjdsofamfdmaoo12768");
+
+        //Return an empty array
+        $this->assertTrue(count($result) == 0, "The array is not empty");
     }
 }

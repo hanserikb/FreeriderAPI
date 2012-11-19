@@ -1,0 +1,515 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \SimplePhpPageBuilder</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_addContent" title="addContent :: Unparsed, but relevant data."><span class="description">Unparsed, but relevant data.</span><pre>addContent()</pre></a></li>
+<li class="method public "><a href="#method_can" title="can :: This builder is always available."><span class="description">This builder is always available.</span><pre>can()</pre></a></li>
+<li class="method public "><a href="#method_endElement" title="endElement :: End of element event."><span class="description">End of element event.</span><pre>endElement()</pre></a></li>
+<li class="method public "><a href="#method_free" title="free :: Frees up any references so as to allow the PHP garbage
+   collection from unset() to work."><span class="description">Frees up any references so as to allow the PHP garbage
+   collection from unset() to work.</span><pre>free()</pre></a></li>
+<li class="method public "><a href="#method_parse" title="parse :: Reads the raw content and send events
+   into the page to be built."><span class="description">Reads the raw content and send events
+   into the page to be built.</span><pre>parse()</pre></a></li>
+<li class="method public "><a href="#method_startElement" title="startElement :: Start of element event."><span class="description">Start of element event.</span><pre>startElement()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_acceptFormEnd" title="acceptFormEnd :: Closes the most recently opened form."><span class="description">Closes the most recently opened form.</span><pre>acceptFormEnd()</pre></a></li>
+<li class="method protected "><a href="#method_acceptFormStart" title="acceptFormStart :: Opens a form."><span class="description">Opens a form.</span><pre>acceptFormStart()</pre></a></li>
+<li class="method protected "><a href="#method_acceptFrame" title="acceptFrame :: Takes a single frame tag and stashes it in
+   the current frame set."><span class="description">Takes a single frame tag and stashes it in
+   the current frame set.</span><pre>acceptFrame()</pre></a></li>
+<li class="method protected "><a href="#method_acceptFramesetEnd" title="acceptFramesetEnd :: Closes the most recently opened frameset."><span class="description">Closes the most recently opened frameset.</span><pre>acceptFramesetEnd()</pre></a></li>
+<li class="method protected "><a href="#method_acceptFramesetStart" title="acceptFramesetStart :: Opens a frameset."><span class="description">Opens a frameset.</span><pre>acceptFramesetStart()</pre></a></li>
+<li class="method protected "><a href="#method_acceptLabelEnd" title="acceptLabelEnd :: Closes the most recently opened label."><span class="description">Closes the most recently opened label.</span><pre>acceptLabelEnd()</pre></a></li>
+<li class="method protected "><a href="#method_acceptLabelStart" title="acceptLabelStart :: Opens a label for a described widget."><span class="description">Opens a label for a described widget.</span><pre>acceptLabelStart()</pre></a></li>
+<li class="method protected "><a href="#method_acceptPageEnd" title="acceptPageEnd :: Marker for end of complete page."><span class="description">Marker for end of complete page.</span><pre>acceptPageEnd()</pre></a></li>
+<li class="method protected "><a href="#method_acceptTag" title="acceptTag :: Adds a tag to the page."><span class="description">Adds a tag to the page.</span><pre>acceptTag()</pre></a></li>
+<li class="method protected "><a href="#method_addContentTagToOpenTags" title="addContentTagToOpenTags :: Parsed data in tag form."><span class="description">Parsed data in tag form.</span><pre>addContentTagToOpenTags()</pre></a></li>
+<li class="method protected "><a href="#method_addContentToAllOpenTags" title="addContentToAllOpenTags :: Any content fills all currently open tags unless it
+   is part of an option tag."><span class="description">Any content fills all currently open tags unless it
+   is part of an option tag.</span><pre>addContentToAllOpenTags()</pre></a></li>
+<li class="method protected "><a href="#method_createPage" title="createPage :: Creates an empty page."><span class="description">Creates an empty page.</span><pre>createPage()</pre></a></li>
+<li class="method protected "><a href="#method_createParser" title="createParser :: Creates the parser used with the builder."><span class="description">Creates the parser used with the builder.</span><pre>createParser()</pre></a></li>
+<li class="method protected "><a href="#method_hasNamedTagOnOpenTagStack" title="hasNamedTagOnOpenTagStack :: Test to see if there are any open tags awaiting
+   closure that match the tag name."><span class="description">Test to see if there are any open tags awaiting
+   closure that match the tag name.</span><pre>hasNamedTagOnOpenTagStack()</pre></a></li>
+<li class="method protected "><a href="#method_isFormElement" title="isFormElement :: Tests to see if a tag is a possible form
+   element."><span class="description">Tests to see if a tag is a possible form
+   element.</span><pre>isFormElement()</pre></a></li>
+<li class="method protected "><a href="#method_isLoadingFrames" title="isLoadingFrames :: Test to see if in the middle of reading
+   a frameset."><span class="description">Test to see if in the middle of reading
+   a frameset.</span><pre>isLoadingFrames()</pre></a></li>
+<li class="method protected "><a href="#method_openTag" title="openTag :: Opens a tag for receiving content."><span class="description">Opens a tag for receiving content.</span><pre>openTag()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_complete_forms" title="$complete_forms :: "><span class="description"></span><pre>$complete_forms</pre></a></li>
+<li class="property private "><a href="#property_frameset" title="$frameset :: "><span class="description"></span><pre>$frameset</pre></a></li>
+<li class="property private "><a href="#property_frameset_nesting_level" title="$frameset_nesting_level :: "><span class="description"></span><pre>$frameset_nesting_level</pre></a></li>
+<li class="property private "><a href="#property_left_over_labels" title="$left_over_labels :: "><span class="description"></span><pre>$left_over_labels</pre></a></li>
+<li class="property private "><a href="#property_loading_frames" title="$loading_frames :: "><span class="description"></span><pre>$loading_frames</pre></a></li>
+<li class="property private "><a href="#property_open_forms" title="$open_forms :: "><span class="description"></span><pre>$open_forms</pre></a></li>
+<li class="property private "><a href="#property_page" title="$page :: "><span class="description"></span><pre>$page</pre></a></li>
+<li class="property private "><a href="#property_private_content_tag" title="$private_content_tag :: "><span class="description"></span><pre>$private_content_tag</pre></a></li>
+<li class="property private "><a href="#property_tags" title="$tags :: "><span class="description"></span><pre>$tags</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\SimplePhpPageBuilder"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/SimplePhpPageBuilder.html">SimplePhpPageBuilder</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">SAX event handler.</p>
+<div class="details">
+<div class="long_description"><p>Maintains a list of
+   open tags and dispatches them as they close.</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html">SimpleTest
+   @subpackage WebTester</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_addContent"></a><div class="element clickable method public method_addContent" data-toggle="collapse" data-target=".method_addContent .collapse">
+<h2>Unparsed, but relevant data.</h2>
+<pre>addContent(string $text) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The data is added
+   to every open tag.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>May include unparsed tags. @return boolean False on parse error. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_can"></a><div class="element clickable method public method_can" data-toggle="collapse" data-target=".method_can .collapse">
+<h2>This builder is always available.</h2>
+<pre>can() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@return boolean       Always true.</p></div></div></div>
+</div>
+<a id="method_endElement"></a><div class="element clickable method public method_endElement" data-toggle="collapse" data-target=".method_endElement .collapse">
+<h2>End of element event.</h2>
+<pre>endElement($name) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $name        Element name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>False on parse error.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_free"></a><div class="element clickable method public method_free" data-toggle="collapse" data-target=".method_free .collapse">
+<h2>Frees up any references so as to allow the PHP garbage
+   collection from unset() to work.</h2>
+<pre>free() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@access public</p></div></div></div>
+</div>
+<a id="method_parse"></a><div class="element clickable method public method_parse" data-toggle="collapse" data-target=".method_parse .collapse">
+<h2>Reads the raw content and send events
+   into the page to be built.</h2>
+<pre>parse($response) : <a href="../classes/SimplePage.html">\SimplePage</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param $response SimpleHttpResponse  Fetched response.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$response</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/SimplePage.html">\SimplePage</a></code>Newly parsed page.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_startElement"></a><div class="element clickable method public method_startElement" data-toggle="collapse" data-target=".method_startElement .collapse">
+<h2>Start of element event.</h2>
+<pre>startElement(string $name, $attributes) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Opens a new tag.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Element name. @param hash $attributes Attributes without content are marked as true. @return boolean False on parse error. @access public</p>
+</div>
+<div class="subelement argument"><h4>$attributes</h4></div>
+</div></div>
+</div>
+<a id="method_acceptFormEnd"></a><div class="element clickable method protected method_acceptFormEnd" data-toggle="collapse" data-target=".method_acceptFormEnd .collapse">
+<h2>Closes the most recently opened form.</h2>
+<pre>acceptFormEnd() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@access public</p></div></div></div>
+</div>
+<a id="method_acceptFormStart"></a><div class="element clickable method protected method_acceptFormStart" data-toggle="collapse" data-target=".method_acceptFormStart .collapse">
+<h2>Opens a form.</h2>
+<pre>acceptFormStart(<a href="../classes/SimpleFormTag.html">\SimpleFormTag</a> $tag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>New widgets go here.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tag</h4>
+<code><a href="../classes/SimpleFormTag.html">\SimpleFormTag</a></code><p>Tag to accept. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_acceptFrame"></a><div class="element clickable method protected method_acceptFrame" data-toggle="collapse" data-target=".method_acceptFrame .collapse">
+<h2>Takes a single frame tag and stashes it in
+   the current frame set.</h2>
+<pre>acceptFrame($tag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleFrameTag $tag      Tag to accept.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$tag</h4></div>
+</div></div>
+</div>
+<a id="method_acceptFramesetEnd"></a><div class="element clickable method protected method_acceptFramesetEnd" data-toggle="collapse" data-target=".method_acceptFramesetEnd .collapse">
+<h2>Closes the most recently opened frameset.</h2>
+<pre>acceptFramesetEnd() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@access public</p></div></div></div>
+</div>
+<a id="method_acceptFramesetStart"></a><div class="element clickable method protected method_acceptFramesetStart" data-toggle="collapse" data-target=".method_acceptFramesetStart .collapse">
+<h2>Opens a frameset.</h2>
+<pre>acceptFramesetStart(\SimpleFramesetTag $tag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>A frameset may contain nested
+   frameset tags.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tag</h4>
+<code>\SimpleFramesetTag</code><p>Tag to accept. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_acceptLabelEnd"></a><div class="element clickable method protected method_acceptLabelEnd" data-toggle="collapse" data-target=".method_acceptLabelEnd .collapse">
+<h2>Closes the most recently opened label.</h2>
+<pre>acceptLabelEnd() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@access public</p></div></div></div>
+</div>
+<a id="method_acceptLabelStart"></a><div class="element clickable method protected method_acceptLabelStart" data-toggle="collapse" data-target=".method_acceptLabelStart .collapse">
+<h2>Opens a label for a described widget.</h2>
+<pre>acceptLabelStart($tag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleFormTag $tag      Tag to accept.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$tag</h4></div>
+</div></div>
+</div>
+<a id="method_acceptPageEnd"></a><div class="element clickable method protected method_acceptPageEnd" data-toggle="collapse" data-target=".method_acceptPageEnd .collapse">
+<h2>Marker for end of complete page.</h2>
+<pre>acceptPageEnd() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Any work in
+   progress can now be closed.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_acceptTag"></a><div class="element clickable method protected method_acceptTag" data-toggle="collapse" data-target=".method_acceptTag .collapse">
+<h2>Adds a tag to the page.</h2>
+<pre>acceptTag($tag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleTag $tag        Tag to accept.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$tag</h4></div>
+</div></div>
+</div>
+<a id="method_addContentTagToOpenTags"></a><div class="element clickable method protected method_addContentTagToOpenTags" data-toggle="collapse" data-target=".method_addContentTagToOpenTags .collapse">
+<h2>Parsed data in tag form.</h2>
+<pre>addContentTagToOpenTags(<a href="../classes/SimpleTag.html">\SimpleTag</a> $tag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The parsed tag is added
+   to every open tag. Used for adding options to select
+   fields only.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tag</h4>
+<code><a href="../classes/SimpleTag.html">\SimpleTag</a></code><p>Option tags only. @access private</p>
+</div>
+</div></div>
+</div>
+<a id="method_addContentToAllOpenTags"></a><div class="element clickable method protected method_addContentToAllOpenTags" data-toggle="collapse" data-target=".method_addContentToAllOpenTags .collapse">
+<h2>Any content fills all currently open tags unless it
+   is part of an option tag.</h2>
+<pre>addContentToAllOpenTags($text) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $text        May include unparsed tags.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$text</h4></div>
+</div></div>
+</div>
+<a id="method_createPage"></a><div class="element clickable method protected method_createPage" data-toggle="collapse" data-target=".method_createPage .collapse">
+<h2>Creates an empty page.</h2>
+<pre>createPage($response) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return SimplePage        New unparsed page.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$response</h4></div>
+</div></div>
+</div>
+<a id="method_createParser"></a><div class="element clickable method protected method_createParser" data-toggle="collapse" data-target=".method_createParser .collapse">
+<h2>Creates the parser used with the builder.</h2>
+<pre>createParser($listener) : \SimpleSaxParser</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimplePhpPageBuilder $listener   Target of parser.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$listener</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\SimpleSaxParser</code>Parser to generate
+                                        events for the builder.
+   @access protected</div>
+</div></div>
+</div>
+<a id="method_hasNamedTagOnOpenTagStack"></a><div class="element clickable method protected method_hasNamedTagOnOpenTagStack" data-toggle="collapse" data-target=".method_hasNamedTagOnOpenTagStack .collapse">
+<h2>Test to see if there are any open tags awaiting
+   closure that match the tag name.</h2>
+<pre>hasNamedTagOnOpenTagStack($name) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $name        Element name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if any are still open.
+   @access private</div>
+</div></div>
+</div>
+<a id="method_isFormElement"></a><div class="element clickable method protected method_isFormElement" data-toggle="collapse" data-target=".method_isFormElement .collapse">
+<h2>Tests to see if a tag is a possible form
+   element.</h2>
+<pre>isFormElement($name) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $name     HTML element name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if form element.
+   @access private</div>
+</div></div>
+</div>
+<a id="method_isLoadingFrames"></a><div class="element clickable method protected method_isLoadingFrames" data-toggle="collapse" data-target=".method_isLoadingFrames .collapse">
+<h2>Test to see if in the middle of reading
+   a frameset.</h2>
+<pre>isLoadingFrames() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean        True if inframeset.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_openTag"></a><div class="element clickable method protected method_openTag" data-toggle="collapse" data-target=".method_openTag .collapse">
+<h2>Opens a tag for receiving content.</h2>
+<pre>openTag(<a href="../classes/SimpleTag.html">\SimpleTag</a> $tag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Multiple tags
+   will be receiving input at the same time.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tag</h4>
+<code><a href="../classes/SimpleTag.html">\SimpleTag</a></code><p>New content tag. @access private</p>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_complete_forms"> </a><div class="element clickable property private property_complete_forms" data-toggle="collapse" data-target=".property_complete_forms .collapse">
+<h2></h2>
+<pre>$complete_forms </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_frameset"> </a><div class="element clickable property private property_frameset" data-toggle="collapse" data-target=".property_frameset .collapse">
+<h2></h2>
+<pre>$frameset </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_frameset_nesting_level"> </a><div class="element clickable property private property_frameset_nesting_level" data-toggle="collapse" data-target=".property_frameset_nesting_level .collapse">
+<h2></h2>
+<pre>$frameset_nesting_level </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_left_over_labels"> </a><div class="element clickable property private property_left_over_labels" data-toggle="collapse" data-target=".property_left_over_labels .collapse">
+<h2></h2>
+<pre>$left_over_labels </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_loading_frames"> </a><div class="element clickable property private property_loading_frames" data-toggle="collapse" data-target=".property_loading_frames .collapse">
+<h2></h2>
+<pre>$loading_frames </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_open_forms"> </a><div class="element clickable property private property_open_forms" data-toggle="collapse" data-target=".property_open_forms .collapse">
+<h2></h2>
+<pre>$open_forms </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_page"> </a><div class="element clickable property private property_page" data-toggle="collapse" data-target=".property_page .collapse">
+<h2></h2>
+<pre>$page </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_private_content_tag"> </a><div class="element clickable property private property_private_content_tag" data-toggle="collapse" data-target=".property_private_content_tag .collapse">
+<h2></h2>
+<pre>$private_content_tag </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tags"> </a><div class="element clickable property private property_tags" data-toggle="collapse" data-target=".property_tags .collapse">
+<h2></h2>
+<pre>$tags </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:11+01:00.<br></footer></div>
+</div>
+</body>
+</html>

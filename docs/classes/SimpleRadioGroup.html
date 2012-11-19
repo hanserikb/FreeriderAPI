@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \SimpleRadioGroup</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method_addWidget" title="addWidget :: Adds a tag to the group."><span class="description">Adds a tag to the group.</span><pre>addWidget()</pre></a></li>
+<li class="method public inherited"><a href="#method_getAttribute" title="getAttribute :: Accessor for an attribute."><span class="description">Accessor for an attribute.</span><pre>getAttribute()</pre></a></li>
+<li class="method public "><a href="#method_getDefault" title="getDefault :: Accessor for starting value that is active."><span class="description">Accessor for starting value that is active.</span><pre>getDefault()</pre></a></li>
+<li class="method public inherited"><a href="#method_getName" title="getName :: Fetches the name for the widget from the first
+   member."><span class="description">Fetches the name for the widget from the first
+   member.</span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getValue" title="getValue :: Accessor for current selected widget or false
+   if none."><span class="description">Accessor for current selected widget or false
+   if none.</span><pre>getValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_isId" title="isId :: Scans the widgets for one with the appropriate
+   ID field."><span class="description">Scans the widgets for one with the appropriate
+   ID field.</span><pre>isId()</pre></a></li>
+<li class="method public inherited"><a href="#method_isLabel" title="isLabel :: Scans the widgets for one with the appropriate
+   attached label."><span class="description">Scans the widgets for one with the appropriate
+   attached label.</span><pre>isLabel()</pre></a></li>
+<li class="method public "><a href="#method_setValue" title="setValue :: Each tag is tried in turn until one is
+   successfully set."><span class="description">Each tag is tried in turn until one is
+   successfully set.</span><pre>setValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_write" title="write :: Dispatches the value into the form encoded packet."><span class="description">Dispatches the value into the form encoded packet.</span><pre>write()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_getWidgets" title="getWidgets :: Accessor to widget set."><span class="description">Accessor to widget set.</span><pre>getWidgets()</pre></a></li>
+<li class="method protected "><a href="#method_valueIsPossible" title="valueIsPossible :: Tests to see if a value is allowed."><span class="description">Tests to see if a value is allowed.</span><pre>valueIsPossible()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private inherited"><a href="#property_widgets" title="$widgets :: "><span class="description"></span><pre>$widgets</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\SimpleRadioGroup"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/SimpleRadioGroup.html">SimpleRadioGroup</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">A group of tags with the same name within a form.</p>
+<div class="details">
+<div class="long_description"><p>Used for radio buttons.</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html">SimpleTest
+   @subpackage WebTester</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_addWidget"></a><div class="element clickable method public method_addWidget" data-toggle="collapse" data-target=".method_addWidget .collapse">
+<h2>Adds a tag to the group.</h2>
+<pre>addWidget($widget) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleWidget $widget</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::addWidget()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$widget</h4></div>
+</div></div>
+</div>
+<a id="method_getAttribute"></a><div class="element clickable method public method_getAttribute" data-toggle="collapse" data-target=".method_getAttribute .collapse">
+<h2>Accessor for an attribute.</h2>
+<pre>getAttribute($label) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $label    Attribute name.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::getAttribute()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$label</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Always false.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_getDefault"></a><div class="element clickable method public method_getDefault" data-toggle="collapse" data-target=".method_getDefault .collapse">
+<h2>Accessor for starting value that is active.</h2>
+<pre>getDefault() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return string/boolean      Value of first checked
+                               widget or false if none.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>Fetches the name for the widget from the first
+   member.</h2>
+<pre>getName() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return string        Name of widget.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::getName()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getValue"></a><div class="element clickable method public method_getValue" data-toggle="collapse" data-target=".method_getValue .collapse">
+<h2>Accessor for current selected widget or false
+   if none.</h2>
+<pre>getValue() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return string/boolean   Value attribute or
+                            content of opton.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isId"></a><div class="element clickable method public method_isId" data-toggle="collapse" data-target=".method_isId .collapse">
+<h2>Scans the widgets for one with the appropriate
+   ID field.</h2>
+<pre>isId($id) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $id        ID value to try.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::isId()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if matched.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_isLabel"></a><div class="element clickable method public method_isLabel" data-toggle="collapse" data-target=".method_isLabel .collapse">
+<h2>Scans the widgets for one with the appropriate
+   attached label.</h2>
+<pre>isLabel($label) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $label     Attached label to try.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::isLabel()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$label</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if matched.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_setValue"></a><div class="element clickable method public method_setValue" data-toggle="collapse" data-target=".method_setValue .collapse">
+<h2>Each tag is tried in turn until one is
+   successfully set.</h2>
+<pre>setValue(string $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The others will be
+   unchecked if successful.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>New value. @return boolean True if any allowed. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_write"></a><div class="element clickable method public method_write" data-toggle="collapse" data-target=".method_write .collapse">
+<h2>Dispatches the value into the form encoded packet.</h2>
+<pre>write($encoding) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleEncoding $encoding    Form packet.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::write()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$encoding</h4></div>
+</div></div>
+</div>
+<a id="method_getWidgets"></a><div class="element clickable method protected method_getWidgets" data-toggle="collapse" data-target=".method_getWidgets .collapse">
+<h2>Accessor to widget set.</h2>
+<pre>getWidgets() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return array        All widgets.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::getWidgets()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_valueIsPossible"></a><div class="element clickable method protected method_valueIsPossible" data-toggle="collapse" data-target=".method_valueIsPossible .collapse">
+<h2>Tests to see if a value is allowed.</h2>
+<pre>valueIsPossible($value) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string    Attempted value.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if a valid value.
+   @access private</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_widgets"> </a><div class="element clickable property private property_widgets" data-toggle="collapse" data-target=".property_widgets .collapse">
+<h2></h2>
+<pre>$widgets </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleTagGroup::$$widgets</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:17+01:00.<br></footer></div>
+</div>
+</body>
+</html>

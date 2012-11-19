@@ -1,0 +1,1521 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \TestOfReflection</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method___construct" title="__construct :: Creates an empty test case."><span class="description">Creates an empty test case.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method_after" title="after :: Announces the end of the test."><span class="description">Announces the end of the test.</span><pre>after()</pre></a></li>
+<li class="method public inherited"><a href="#method_assert" title="assert :: Runs an expectation directly, for extending the
+   tests with new expectation classes."><span class="description">Runs an expectation directly, for extending the
+   tests with new expectation classes.</span><pre>assert()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertClone" title="assertClone :: Will trigger a pass if both parameters refer
+   to different objects."><span class="description">Will trigger a pass if both parameters refer
+   to different objects.</span><pre>assertClone()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertCopy" title="assertCopy :: Will trigger a pass if both parameters refer
+   to different variables."><span class="description">Will trigger a pass if both parameters refer
+   to different variables.</span><pre>assertCopy()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertEqual" title="assertEqual :: Will trigger a pass if the two parameters have
+   the same value only."><span class="description">Will trigger a pass if the two parameters have
+   the same value only.</span><pre>assertEqual()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertFalse" title="assertFalse :: Will be true on false and vice versa."><span class="description">Will be true on false and vice versa.</span><pre>assertFalse()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertIdentical" title="assertIdentical :: Will trigger a pass if the two parameters have
+   the same value and same type."><span class="description">Will trigger a pass if the two parameters have
+   the same value and same type.</span><pre>assertIdentical()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertIsA" title="assertIsA :: Type and class test."><span class="description">Type and class test.</span><pre>assertIsA()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertNoPattern" title="assertNoPattern :: Will trigger a pass if the perl regex pattern
+   is not present in subject."><span class="description">Will trigger a pass if the perl regex pattern
+   is not present in subject.</span><pre>assertNoPattern()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertNotA" title="assertNotA :: Type and class mismatch test."><span class="description">Type and class mismatch test.</span><pre>assertNotA()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertNotEqual" title="assertNotEqual :: Will trigger a pass if the two parameters have
+   a different value."><span class="description">Will trigger a pass if the two parameters have
+   a different value.</span><pre>assertNotEqual()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertNotIdentical" title="assertNotIdentical :: Will trigger a pass if the two parameters have
+   the different value or different type."><span class="description">Will trigger a pass if the two parameters have
+   the different value or different type.</span><pre>assertNotIdentical()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertNotNull" title="assertNotNull :: Will be true if the value is set."><span class="description">Will be true if the value is set.</span><pre>assertNotNull()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertNull" title="assertNull :: Will be true if the value is null."><span class="description">Will be true if the value is null.</span><pre>assertNull()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertOutsideMargin" title="assertOutsideMargin :: Will trigger a pass if the two parameters differ
+   by more than the margin."><span class="description">Will trigger a pass if the two parameters differ
+   by more than the margin.</span><pre>assertOutsideMargin()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertPattern" title="assertPattern :: Will trigger a pass if the Perl regex pattern
+   is found in the subject."><span class="description">Will trigger a pass if the Perl regex pattern
+   is found in the subject.</span><pre>assertPattern()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertReference" title="assertReference :: Will trigger a pass if both parameters refer
+   to the same object or value."><span class="description">Will trigger a pass if both parameters refer
+   to the same object or value.</span><pre>assertReference()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertSame" title="assertSame :: Will trigger a pass if both parameters refer
+   to the same object."><span class="description">Will trigger a pass if both parameters refer
+   to the same object.</span><pre>assertSame()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertTrue" title="assertTrue :: Called from within the test methods to register
+   passes and failures."><span class="description">Called from within the test methods to register
+   passes and failures.</span><pre>assertTrue()</pre></a></li>
+<li class="method public inherited"><a href="#method_assertWithinMargin" title="assertWithinMargin :: Will trigger a pass if the if the first parameter
+   is near enough to the second by the margin."><span class="description">Will trigger a pass if the if the first parameter
+   is near enough to the second by the margin.</span><pre>assertWithinMargin()</pre></a></li>
+<li class="method public inherited"><a href="#method_before" title="before :: Announces the start of the test."><span class="description">Announces the start of the test.</span><pre>before()</pre></a></li>
+<li class="method public inherited"><a href="#method_createInvoker" title="createInvoker :: Used to invoke the single tests."><span class="description">Used to invoke the single tests.</span><pre>createInvoker()</pre></a></li>
+<li class="method public inherited"><a href="#method_dump" title="dump :: Sends a formatted dump of a variable to the
+   test suite for those emergency debugging
+   situations."><span class="description">Sends a formatted dump of a variable to the
+   test suite for those emergency debugging
+   situations.</span><pre>dump()</pre></a></li>
+<li class="method public inherited"><a href="#method_error" title="error :: Formats a PHP error and dispatches it to the
+   reporter."><span class="description">Formats a PHP error and dispatches it to the
+   reporter.</span><pre>error()</pre></a></li>
+<li class="method public inherited"><a href="#method_exception" title="exception :: Formats an exception and dispatches it to the
+   reporter."><span class="description">Formats an exception and dispatches it to the
+   reporter.</span><pre>exception()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectError" title="expectError :: Prepares for an error."><span class="description">Prepares for an error.</span><pre>expectError()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectException" title="expectException :: Prepares for an exception."><span class="description">Prepares for an exception.</span><pre>expectException()</pre></a></li>
+<li class="method public inherited"><a href="#method_fail" title="fail :: Sends a fail event with a message."><span class="description">Sends a fail event with a message.</span><pre>fail()</pre></a></li>
+<li class="method public inherited"><a href="#method_getAssertionLine" title="getAssertionLine :: Uses a stack trace to find the line of an assertion."><span class="description">Uses a stack trace to find the line of an assertion.</span><pre>getAssertionLine()</pre></a></li>
+<li class="method public inherited"><a href="#method_getLabel" title="getLabel :: Accessor for the test name for subclasses."><span class="description">Accessor for the test name for subclasses.</span><pre>getLabel()</pre></a></li>
+<li class="method public inherited"><a href="#method_getSize" title="getSize :: Accessor for the number of subtests including myelf."><span class="description">Accessor for the number of subtests including myelf.</span><pre>getSize()</pre></a></li>
+<li class="method public inherited"><a href="#method_getTests" title="getTests :: Gets a list of test names."><span class="description">Gets a list of test names.</span><pre>getTests()</pre></a></li>
+<li class="method public inherited"><a href="#method_ignoreException" title="ignoreException :: Tells SimpleTest to ignore an upcoming exception as not relevant
+   to the current test."><span class="description">Tells SimpleTest to ignore an upcoming exception as not relevant
+   to the current test.</span><pre>ignoreException()</pre></a></li>
+<li class="method public inherited"><a href="#method_pass" title="pass :: "><span class="description">pass()
+        </span><pre>pass()</pre></a></li>
+<li class="method public inherited"><a href="#method_run" title='run :: Uses reflection to run every method within itself
+   starting with the string "test" unless a method
+   is specified.'><span class="description">Uses reflection to run every method within itself
+   starting with the string "test" unless a method
+   is specified.</span><pre>run()</pre></a></li>
+<li class="method public inherited"><a href="#method_setUp" title="setUp :: Sets up unit test wide variables at the start
+   of each test method."><span class="description">Sets up unit test wide variables at the start
+   of each test method.</span><pre>setUp()</pre></a></li>
+<li class="method public inherited"><a href="#method_shouldSkip" title="shouldSkip :: Accessor for the private variable $_shoud_skip"><span class="description">Accessor for the private variable $_shoud_skip</span><pre>shouldSkip()</pre></a></li>
+<li class="method public inherited"><a href="#method_signal" title="signal :: For user defined expansion of the available messages."><span class="description">For user defined expansion of the available messages.</span><pre>signal()</pre></a></li>
+<li class="method public inherited"><a href="#method_skip" title="skip :: This is a placeholder for skipping tests."><span class="description">This is a placeholder for skipping tests.</span><pre>skip()</pre></a></li>
+<li class="method public inherited"><a href="#method_skipIf" title="skipIf :: Will issue a message to the reporter and tell the test
+   case to skip if the incoming flag is true."><span class="description">Will issue a message to the reporter and tell the test
+   case to skip if the incoming flag is true.</span><pre>skipIf()</pre></a></li>
+<li class="method public inherited"><a href="#method_skipUnless" title="skipUnless :: Will issue a message to the reporter and tell the test
+   case to skip if the incoming flag is false."><span class="description">Will issue a message to the reporter and tell the test
+   case to skip if the incoming flag is false.</span><pre>skipUnless()</pre></a></li>
+<li class="method public inherited"><a href="#method_tearDown" title="tearDown :: Clears the data set in the setUp() method call."><span class="description">Clears the data set in the setUp() method call.</span><pre>tearDown()</pre></a></li>
+<li class="method public inherited"><a href="#method_tell" title="tell :: Sets up an observer for the test end."><span class="description">Sets up an observer for the test end.</span><pre>tell()</pre></a></li>
+<li class="method public "><a href="#method_testCanProperlyGenerateStaticMethodSignatures" title="testCanProperlyGenerateStaticMethodSignatures :: "><span class="description">testCanProperlyGenerateStaticMethodSignatures()
+        </span><pre>testCanProperlyGenerateStaticMethodSignatures()</pre></a></li>
+<li class="method public "><a href="#method_testCanSeparateInterfaceMethodsFromOthers" title="testCanSeparateInterfaceMethodsFromOthers :: "><span class="description">testCanSeparateInterfaceMethodsFromOthers()
+        </span><pre>testCanSeparateInterfaceMethodsFromOthers()</pre></a></li>
+<li class="method public "><a href="#method_testClassExistence" title="testClassExistence :: "><span class="description">testClassExistence()
+        </span><pre>testClassExistence()</pre></a></li>
+<li class="method public "><a href="#method_testClassNonExistence" title="testClassNonExistence :: "><span class="description">testClassNonExistence()
+        </span><pre>testClassNonExistence()</pre></a></li>
+<li class="method public "><a href="#method_testCreatingSignatureForAbstractMethod" title="testCreatingSignatureForAbstractMethod :: "><span class="description">testCreatingSignatureForAbstractMethod()
+        </span><pre>testCreatingSignatureForAbstractMethod()</pre></a></li>
+<li class="method public "><a href="#method_testDetectionOfAbstractClass" title="testDetectionOfAbstractClass :: "><span class="description">testDetectionOfAbstractClass()
+        </span><pre>testDetectionOfAbstractClass()</pre></a></li>
+<li class="method public "><a href="#method_testDetectionOfFinalMethods" title="testDetectionOfFinalMethods :: "><span class="description">testDetectionOfFinalMethods()
+        </span><pre>testDetectionOfFinalMethods()</pre></a></li>
+<li class="method public "><a href="#method_testFindingParentClass" title="testFindingParentClass :: "><span class="description">testFindingParentClass()
+        </span><pre>testFindingParentClass()</pre></a></li>
+<li class="method public "><a href="#method_testInterfaceExistence" title="testInterfaceExistence :: "><span class="description">testInterfaceExistence()
+        </span><pre>testInterfaceExistence()</pre></a></li>
+<li class="method public "><a href="#method_testInterfaceHasOnlyItselfToImplement" title="testInterfaceHasOnlyItselfToImplement :: "><span class="description">testInterfaceHasOnlyItselfToImplement()
+        </span><pre>testInterfaceHasOnlyItselfToImplement()</pre></a></li>
+<li class="method public "><a href="#method_testInterfacesListedForClass" title="testInterfacesListedForClass :: "><span class="description">testInterfacesListedForClass()
+        </span><pre>testInterfacesListedForClass()</pre></a></li>
+<li class="method public "><a href="#method_testInterfacesListedForSubclass" title="testInterfacesListedForSubclass :: "><span class="description">testInterfacesListedForSubclass()
+        </span><pre>testInterfacesListedForSubclass()</pre></a></li>
+<li class="method public "><a href="#method_testIssetFunctionSignature" title="testIssetFunctionSignature :: "><span class="description">testIssetFunctionSignature()
+        </span><pre>testIssetFunctionSignature()</pre></a></li>
+<li class="method public "><a href="#method_testMethodsComeFromDescendentInterfacesASWell" title="testMethodsComeFromDescendentInterfacesASWell :: "><span class="description">testMethodsComeFromDescendentInterfacesASWell()
+        </span><pre>testMethodsComeFromDescendentInterfacesASWell()</pre></a></li>
+<li class="method public "><a href="#method_testMethodsComeFromDescendentInterfacesInAbstractClass" title="testMethodsComeFromDescendentInterfacesInAbstractClass :: "><span class="description">testMethodsComeFromDescendentInterfacesInAbstractClass()
+        </span><pre>testMethodsComeFromDescendentInterfacesInAbstractClass()</pre></a></li>
+<li class="method public "><a href="#method_testMethodsListFromClass" title="testMethodsListFromClass :: "><span class="description">testMethodsListFromClass()
+        </span><pre>testMethodsListFromClass()</pre></a></li>
+<li class="method public "><a href="#method_testMethodsListFromInterface" title="testMethodsListFromInterface :: "><span class="description">testMethodsListFromInterface()
+        </span><pre>testMethodsListFromInterface()</pre></a></li>
+<li class="method public "><a href="#method_testNoParameterCreationWhenNoInterface" title="testNoParameterCreationWhenNoInterface :: "><span class="description">testNoParameterCreationWhenNoInterface()
+        </span><pre>testNoParameterCreationWhenNoInterface()</pre></a></li>
+<li class="method public "><a href="#method_testParameterCreationForTypeHinting" title="testParameterCreationForTypeHinting :: "><span class="description">testParameterCreationForTypeHinting()
+        </span><pre>testParameterCreationForTypeHinting()</pre></a></li>
+<li class="method public "><a href="#method_testParameterCreationWithoutTypeHinting" title="testParameterCreationWithoutTypeHinting :: "><span class="description">testParameterCreationWithoutTypeHinting()
+        </span><pre>testParameterCreationWithoutTypeHinting()</pre></a></li>
+<li class="method public "><a href="#method_testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface" title="testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface :: "><span class="description">testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface()
+        </span><pre>testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface()</pre></a></li>
+<li class="method public "><a href="#method_testUnsetFunctionSignature" title="testUnsetFunctionSignature :: "><span class="description">testUnsetFunctionSignature()
+        </span><pre>testUnsetFunctionSignature()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_coerceExpectation" title="coerceExpectation :: Creates an equality expectation if the
+   object/value is not already some type
+   of expectation."><span class="description">Creates an equality expectation if the
+   object/value is not already some type
+   of expectation.</span><pre>coerceExpectation()</pre></a></li>
+<li class="method protected inherited"><a href="#method_isTest" title="isTest :: Tests to see if the method is a test that should
+   be run."><span class="description">Tests to see if the method is a test that should
+   be run.</span><pre>isTest()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected inherited"><a href="#property_reporter" title="$reporter :: "><span class="description"></span><pre>$reporter</pre></a></li></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private inherited"><a href="#property_label" title="$label :: "><span class="description"></span><pre>$label</pre></a></li>
+<li class="property private inherited"><a href="#property_observers" title="$observers :: "><span class="description"></span><pre>$observers</pre></a></li>
+<li class="property private inherited"><a href="#property_should_skip" title="$should_skip :: "><span class="description"></span><pre>$should_skip</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\TestOfReflection"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TestOfReflection.html">TestOfReflection</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Standard unit test class for day to day testing
+   of PHP code XP style.</p>
+<div class="details">
+<div class="long_description"><p>Adds some useful standard
+   assertions.</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">SimpleTest
+   @subpackage   UnitTester</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Creates an empty test case.</h2>
+<pre>__construct(string $label) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Should be subclassed
+   with test methods for a functional test case.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$label</h4>
+<code>string</code><p>Name of test case. Will use the class name if none specified. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_after"></a><div class="element clickable method public method_after" data-toggle="collapse" data-target=".method_after .collapse">
+<h2>Announces the end of the test.</h2>
+<pre>after(string $method) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Includes private clean up.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::after()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::after()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Test method just finished. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_assert"></a><div class="element clickable method public method_assert" data-toggle="collapse" data-target=".method_assert .collapse">
+<h2>Runs an expectation directly, for extending the
+   tests with new expectation classes.</h2>
+<pre>assert($expectation, mixed $compare, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleExpectation $expectation  Expectation subclass.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::assert()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assert()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$expectation</h4></div>
+<div class="subelement argument">
+<h4>$compare</h4>
+<code>mixed</code><p>Value to compare. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertClone"></a><div class="element clickable method public method_assertClone" data-toggle="collapse" data-target=".method_assertClone .collapse">
+<h2>Will trigger a pass if both parameters refer
+   to different objects.</h2>
+<pre>assertClone(mixed $first, $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Fail otherwise. The objects
+   have to be identical though.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertClone()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>Object reference to check. @param mixed $second Hopefully not the same object. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertCopy"></a><div class="element clickable method public method_assertCopy" data-toggle="collapse" data-target=".method_assertCopy .collapse">
+<h2>Will trigger a pass if both parameters refer
+   to different variables.</h2>
+<pre>assertCopy(mixed $first, $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Fail otherwise. The objects
+   have to be identical references though.
+   This will fail under E_STRICT with objects. Use
+   assertClone() for this.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertCopy()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>Object reference to check. @param mixed $second Hopefully not the same object. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertEqual"></a><div class="element clickable method public method_assertEqual" data-toggle="collapse" data-target=".method_assertEqual .collapse">
+<h2>Will trigger a pass if the two parameters have
+   the same value only.</h2>
+<pre>assertEqual(mixed $first, $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Otherwise a fail.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertEqual()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>Value to compare. @param mixed $second Value to compare. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertFalse"></a><div class="element clickable method public method_assertFalse" data-toggle="collapse" data-target=".method_assertFalse .collapse">
+<h2>Will be true on false and vice versa.</h2>
+<pre>assertFalse(boolean $result, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>False
+   is the PHP definition of false, so that null,
+   empty strings, zero and an empty array all count
+   as false.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertFalse()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$result</h4>
+<code>boolean</code><p>Pass on false. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertIdentical"></a><div class="element clickable method public method_assertIdentical" data-toggle="collapse" data-target=".method_assertIdentical .collapse">
+<h2>Will trigger a pass if the two parameters have
+   the same value and same type.</h2>
+<pre>assertIdentical(mixed $first, $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Otherwise a fail.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertIdentical()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>Value to compare. @param mixed $second Value to compare. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertIsA"></a><div class="element clickable method public method_assertIsA" data-toggle="collapse" data-target=".method_assertIsA .collapse">
+<h2>Type and class test.</h2>
+<pre>assertIsA(mixed $object, $type, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will pass if class
+   matches the type name or is a subclass or
+   if not an object, but the type is correct.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertIsA()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$object</h4>
+<code>mixed</code><p>Object to test. @param string $type Type name as string. @param string $message Message to display. @return boolean True on pass. @access public</p>
+</div>
+<div class="subelement argument"><h4>$type</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertNoPattern"></a><div class="element clickable method public method_assertNoPattern" data-toggle="collapse" data-target=".method_assertNoPattern .collapse">
+<h2>Will trigger a pass if the perl regex pattern
+   is not present in subject.</h2>
+<pre>assertNoPattern(string $pattern, $subject, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Fail if found.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertNoPattern()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pattern</h4>
+<code>string</code><p>Perl regex to look for including the regex delimiters. @param string $subject String to search in. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$subject</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertNotA"></a><div class="element clickable method public method_assertNotA" data-toggle="collapse" data-target=".method_assertNotA .collapse">
+<h2>Type and class mismatch test.</h2>
+<pre>assertNotA(mixed $object, $type, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will pass if class
+   name or underling type does not match the one
+   specified.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertNotA()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$object</h4>
+<code>mixed</code><p>Object to test. @param string $type Type name as string. @param string $message Message to display. @return boolean True on pass. @access public</p>
+</div>
+<div class="subelement argument"><h4>$type</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertNotEqual"></a><div class="element clickable method public method_assertNotEqual" data-toggle="collapse" data-target=".method_assertNotEqual .collapse">
+<h2>Will trigger a pass if the two parameters have
+   a different value.</h2>
+<pre>assertNotEqual(mixed $first, $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Otherwise a fail.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertNotEqual()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>Value to compare. @param mixed $second Value to compare. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertNotIdentical"></a><div class="element clickable method public method_assertNotIdentical" data-toggle="collapse" data-target=".method_assertNotIdentical .collapse">
+<h2>Will trigger a pass if the two parameters have
+   the different value or different type.</h2>
+<pre>assertNotIdentical($first, mixed $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $first           Value to compare.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertNotIdentical()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Value to compare. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertNotNull"></a><div class="element clickable method public method_assertNotNull" data-toggle="collapse" data-target=".method_assertNotNull .collapse">
+<h2>Will be true if the value is set.</h2>
+<pre>assertNotNull($value, string $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $value           Supposedly set value.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertNotNull()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Message to display. @return boolean True on pass. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_assertNull"></a><div class="element clickable method public method_assertNull" data-toggle="collapse" data-target=".method_assertNull .collapse">
+<h2>Will be true if the value is null.</h2>
+<pre>assertNull($value, string $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param null $value       Supposedly null value.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertNull()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Message to display. @return boolean True on pass @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_assertOutsideMargin"></a><div class="element clickable method public method_assertOutsideMargin" data-toggle="collapse" data-target=".method_assertOutsideMargin .collapse">
+<h2>Will trigger a pass if the two parameters differ
+   by more than the margin.</h2>
+<pre>assertOutsideMargin($first, mixed $second, $margin, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $first          Value to compare.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertOutsideMargin()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Value to compare. @param mixed $margin Fuzziness of match. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$margin</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertPattern"></a><div class="element clickable method public method_assertPattern" data-toggle="collapse" data-target=".method_assertPattern .collapse">
+<h2>Will trigger a pass if the Perl regex pattern
+   is found in the subject.</h2>
+<pre>assertPattern(string $pattern, $subject, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Fail otherwise.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertPattern()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pattern</h4>
+<code>string</code><p>Perl regex to look for including the regex delimiters. @param string $subject String to search in. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$subject</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertReference"></a><div class="element clickable method public method_assertReference" data-toggle="collapse" data-target=".method_assertReference .collapse">
+<h2>Will trigger a pass if both parameters refer
+   to the same object or value.</h2>
+<pre>assertReference(mixed $first, $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Fail otherwise.
+   This will cause problems testing objects under
+   E_STRICT.
+   TODO: Replace with expectation.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertReference()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>Reference to check. @param mixed $second Hopefully the same variable. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertSame"></a><div class="element clickable method public method_assertSame" data-toggle="collapse" data-target=".method_assertSame .collapse">
+<h2>Will trigger a pass if both parameters refer
+   to the same object.</h2>
+<pre>assertSame(mixed $first, $second, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Fail otherwise. This has
+   the same semantics at the PHPUnit assertSame.
+   That is, if values are passed in it has roughly
+   the same affect as assertIdentical.
+   TODO: Replace with expectation.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertSame()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$first</h4>
+<code>mixed</code><p>Object reference to check. @param mixed $second Hopefully the same object. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$second</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_assertTrue"></a><div class="element clickable method public method_assertTrue" data-toggle="collapse" data-target=".method_assertTrue .collapse">
+<h2>Called from within the test methods to register
+   passes and failures.</h2>
+<pre>assertTrue($result, string $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param boolean $result    Pass on true.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertTrue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$result</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Message to display describing the test state. @return boolean True on pass @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_assertWithinMargin"></a><div class="element clickable method public method_assertWithinMargin" data-toggle="collapse" data-target=".method_assertWithinMargin .collapse">
+<h2>Will trigger a pass if the if the first parameter
+   is near enough to the second by the margin.</h2>
+<pre>assertWithinMargin($first, mixed $second, $margin, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $first          Value to compare.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::assertWithinMargin()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$first</h4></div>
+<div class="subelement argument">
+<h4>$second</h4>
+<code>mixed</code><p>Value to compare. @param mixed $margin Fuzziness of match. @param string $message Message to display. @return boolean True on pass @access public</p>
+</div>
+<div class="subelement argument"><h4>$margin</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_before"></a><div class="element clickable method public method_before" data-toggle="collapse" data-target=".method_before .collapse">
+<h2>Announces the start of the test.</h2>
+<pre>before($method) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method    Test method just started.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::before()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::before()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+</div></div>
+</div>
+<a id="method_createInvoker"></a><div class="element clickable method public method_createInvoker" data-toggle="collapse" data-target=".method_createInvoker .collapse">
+<h2>Used to invoke the single tests.</h2>
+<pre>createInvoker() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return SimpleInvoker        Individual test runner.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::createInvoker()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::createInvoker()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_dump"></a><div class="element clickable method public method_dump" data-toggle="collapse" data-target=".method_dump .collapse">
+<h2>Sends a formatted dump of a variable to the
+   test suite for those emergency debugging
+   situations.</h2>
+<pre>dump($variable, string $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $variable    Variable to display.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::dump()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::dump()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$variable</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Message to display. @return mixed The original variable. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_error"></a><div class="element clickable method public method_error" data-toggle="collapse" data-target=".method_error .collapse">
+<h2>Formats a PHP error and dispatches it to the
+   reporter.</h2>
+<pre>error($severity, string $message, $file, $line) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $severity  PHP error code.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::error()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::error()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$severity</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Text of error. @param string $file File error occoured in. @param integer $line Line number of error. @access public</p>
+</div>
+<div class="subelement argument"><h4>$file</h4></div>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_exception"></a><div class="element clickable method public method_exception" data-toggle="collapse" data-target=".method_exception .collapse">
+<h2>Formats an exception and dispatches it to the
+   reporter.</h2>
+<pre>exception($exception) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param Exception $exception    Object thrown.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::exception()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::exception()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$exception</h4></div>
+</div></div>
+</div>
+<a id="method_expectError"></a><div class="element clickable method public method_expectError" data-toggle="collapse" data-target=".method_expectError .collapse">
+<h2>Prepares for an error.</h2>
+<pre>expectError(\SimpleExpectation/string $expected, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If the error mismatches it
+   passes through, otherwise it is swallowed. Any
+   left over errors trigger failures.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::expectError()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$expected</h4>
+<code>\SimpleExpectation/string</code><p>The error to match. @param string $message Message on failure. @access public</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_expectException"></a><div class="element clickable method public method_expectException" data-toggle="collapse" data-target=".method_expectException .collapse">
+<h2>Prepares for an exception.</h2>
+<pre>expectException(\SimpleExpectation/Exception $expected, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If the error mismatches it
+   passes through, otherwise it is swallowed. Any
+   left over errors trigger failures.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::expectException()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$expected</h4>
+<code>\SimpleExpectation/Exception</code><p>The error to match. @param string $message Message on failure. @access public</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_fail"></a><div class="element clickable method public method_fail" data-toggle="collapse" data-target=".method_fail .collapse">
+<h2>Sends a fail event with a message.</h2>
+<pre>fail($message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $message        Message to send.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::fail()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::fail()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_getAssertionLine"></a><div class="element clickable method public method_getAssertionLine" data-toggle="collapse" data-target=".method_getAssertionLine .collapse">
+<h2>Uses a stack trace to find the line of an assertion.</h2>
+<pre>getAssertionLine() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return string           Line number of first assert*
+                            method embedded in format string.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::getAssertionLine()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::getAssertionLine()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getLabel"></a><div class="element clickable method public method_getLabel" data-toggle="collapse" data-target=".method_getLabel .collapse">
+<h2>Accessor for the test name for subclasses.</h2>
+<pre>getLabel() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return string           Name of the test.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::getLabel()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::getLabel()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getSize"></a><div class="element clickable method public method_getSize" data-toggle="collapse" data-target=".method_getSize .collapse">
+<h2>Accessor for the number of subtests including myelf.</h2>
+<pre>getSize() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return integer           Number of test cases.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::getSize()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::getSize()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getTests"></a><div class="element clickable method public method_getTests" data-toggle="collapse" data-target=".method_getTests .collapse">
+<h2>Gets a list of test names.</h2>
+<pre>getTests() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Normally that will
+   be all internal methods that start with the
+   name "test". This method should be overridden
+   if you want a different rule.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::getTests()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::getTests()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>List of test names.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_ignoreException"></a><div class="element clickable method public method_ignoreException" data-toggle="collapse" data-target=".method_ignoreException .collapse">
+<h2>Tells SimpleTest to ignore an upcoming exception as not relevant
+   to the current test.</h2>
+<pre>ignoreException(\SimpleExpectation/Exception $ignored) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>It doesn't affect the test, whether thrown or
+   not.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::ignoreException()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ignored</h4>
+<code>\SimpleExpectation/Exception</code><p>The error to ignore. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_pass"></a><div class="element clickable method public method_pass" data-toggle="collapse" data-target=".method_pass .collapse">
+<h2>pass()
+        </h2>
+<pre>pass($message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::pass()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::pass()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_run"></a><div class="element clickable method public method_run" data-toggle="collapse" data-target=".method_run .collapse">
+<h2>Uses reflection to run every method within itself
+   starting with the string "test" unless a method
+   is specified.</h2>
+<pre>run($reporter) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleReporter $reporter    Current test reporter.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::run()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::run()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$reporter</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if all tests passed.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_setUp"></a><div class="element clickable method public method_setUp" data-toggle="collapse" data-target=".method_setUp .collapse">
+<h2>Sets up unit test wide variables at the start
+   of each test method.</h2>
+<pre>setUp() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To be overridden in
+   actual user test cases.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::setUp()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::setUp()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_shouldSkip"></a><div class="element clickable method public method_shouldSkip" data-toggle="collapse" data-target=".method_shouldSkip .collapse">
+<h2>Accessor for the private variable $_shoud_skip</h2>
+<pre>shouldSkip() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@access public</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::shouldSkip()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::shouldSkip()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_signal"></a><div class="element clickable method public method_signal" data-toggle="collapse" data-target=".method_signal .collapse">
+<h2>For user defined expansion of the available messages.</h2>
+<pre>signal($type, mixed $payload) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $type       Tag for sorting the signals.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::signal()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::signal()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$type</h4></div>
+<div class="subelement argument">
+<h4>$payload</h4>
+<code>mixed</code><p>Extra user specific information.</p></div>
+</div></div>
+</div>
+<a id="method_skip"></a><div class="element clickable method public method_skip" data-toggle="collapse" data-target=".method_skip .collapse">
+<h2>This is a placeholder for skipping tests.</h2>
+<pre>skip() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In this
+   method you place skipIf() and skipUnless() calls to
+   set the skipping state.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::skip()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::skip()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_skipIf"></a><div class="element clickable method public method_skipIf" data-toggle="collapse" data-target=".method_skipIf .collapse">
+<h2>Will issue a message to the reporter and tell the test
+   case to skip if the incoming flag is true.</h2>
+<pre>skipIf($should_skip, string $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $should_skip    Condition causing the tests to be skipped.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::skipIf()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::skipIf()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$should_skip</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Text of skip condition. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_skipUnless"></a><div class="element clickable method public method_skipUnless" data-toggle="collapse" data-target=".method_skipUnless .collapse">
+<h2>Will issue a message to the reporter and tell the test
+   case to skip if the incoming flag is false.</h2>
+<pre>skipUnless($shouldnt_skip, string $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $shouldnt_skip  Condition causing the tests to be run.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::skipUnless()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::skipUnless()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$shouldnt_skip</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Text of skip condition. @access public</p>
+</div>
+</div></div>
+</div>
+<a id="method_tearDown"></a><div class="element clickable method public method_tearDown" data-toggle="collapse" data-target=".method_tearDown .collapse">
+<h2>Clears the data set in the setUp() method call.</h2>
+<pre>tearDown() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To be overridden by the user in actual user test cases.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::tearDown()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::tearDown()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_tell"></a><div class="element clickable method public method_tell" data-toggle="collapse" data-target=".method_tell .collapse">
+<h2>Sets up an observer for the test end.</h2>
+<pre>tell($observer) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $observer    Must have atTestEnd()
+                              method.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::tell()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::tell()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$observer</h4></div>
+</div></div>
+</div>
+<a id="method_testCanProperlyGenerateStaticMethodSignatures"></a><div class="element clickable method public method_testCanProperlyGenerateStaticMethodSignatures" data-toggle="collapse" data-target=".method_testCanProperlyGenerateStaticMethodSignatures .collapse">
+<h2>testCanProperlyGenerateStaticMethodSignatures()
+        </h2>
+<pre>testCanProperlyGenerateStaticMethodSignatures() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testCanSeparateInterfaceMethodsFromOthers"></a><div class="element clickable method public method_testCanSeparateInterfaceMethodsFromOthers" data-toggle="collapse" data-target=".method_testCanSeparateInterfaceMethodsFromOthers .collapse">
+<h2>testCanSeparateInterfaceMethodsFromOthers()
+        </h2>
+<pre>testCanSeparateInterfaceMethodsFromOthers() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testClassExistence"></a><div class="element clickable method public method_testClassExistence" data-toggle="collapse" data-target=".method_testClassExistence .collapse">
+<h2>testClassExistence()
+        </h2>
+<pre>testClassExistence() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testClassNonExistence"></a><div class="element clickable method public method_testClassNonExistence" data-toggle="collapse" data-target=".method_testClassNonExistence .collapse">
+<h2>testClassNonExistence()
+        </h2>
+<pre>testClassNonExistence() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testCreatingSignatureForAbstractMethod"></a><div class="element clickable method public method_testCreatingSignatureForAbstractMethod" data-toggle="collapse" data-target=".method_testCreatingSignatureForAbstractMethod .collapse">
+<h2>testCreatingSignatureForAbstractMethod()
+        </h2>
+<pre>testCreatingSignatureForAbstractMethod() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testDetectionOfAbstractClass"></a><div class="element clickable method public method_testDetectionOfAbstractClass" data-toggle="collapse" data-target=".method_testDetectionOfAbstractClass .collapse">
+<h2>testDetectionOfAbstractClass()
+        </h2>
+<pre>testDetectionOfAbstractClass() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testDetectionOfFinalMethods"></a><div class="element clickable method public method_testDetectionOfFinalMethods" data-toggle="collapse" data-target=".method_testDetectionOfFinalMethods .collapse">
+<h2>testDetectionOfFinalMethods()
+        </h2>
+<pre>testDetectionOfFinalMethods() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testFindingParentClass"></a><div class="element clickable method public method_testFindingParentClass" data-toggle="collapse" data-target=".method_testFindingParentClass .collapse">
+<h2>testFindingParentClass()
+        </h2>
+<pre>testFindingParentClass() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testInterfaceExistence"></a><div class="element clickable method public method_testInterfaceExistence" data-toggle="collapse" data-target=".method_testInterfaceExistence .collapse">
+<h2>testInterfaceExistence()
+        </h2>
+<pre>testInterfaceExistence() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testInterfaceHasOnlyItselfToImplement"></a><div class="element clickable method public method_testInterfaceHasOnlyItselfToImplement" data-toggle="collapse" data-target=".method_testInterfaceHasOnlyItselfToImplement .collapse">
+<h2>testInterfaceHasOnlyItselfToImplement()
+        </h2>
+<pre>testInterfaceHasOnlyItselfToImplement() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testInterfacesListedForClass"></a><div class="element clickable method public method_testInterfacesListedForClass" data-toggle="collapse" data-target=".method_testInterfacesListedForClass .collapse">
+<h2>testInterfacesListedForClass()
+        </h2>
+<pre>testInterfacesListedForClass() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testInterfacesListedForSubclass"></a><div class="element clickable method public method_testInterfacesListedForSubclass" data-toggle="collapse" data-target=".method_testInterfacesListedForSubclass .collapse">
+<h2>testInterfacesListedForSubclass()
+        </h2>
+<pre>testInterfacesListedForSubclass() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testIssetFunctionSignature"></a><div class="element clickable method public method_testIssetFunctionSignature" data-toggle="collapse" data-target=".method_testIssetFunctionSignature .collapse">
+<h2>testIssetFunctionSignature()
+        </h2>
+<pre>testIssetFunctionSignature() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testMethodsComeFromDescendentInterfacesASWell"></a><div class="element clickable method public method_testMethodsComeFromDescendentInterfacesASWell" data-toggle="collapse" data-target=".method_testMethodsComeFromDescendentInterfacesASWell .collapse">
+<h2>testMethodsComeFromDescendentInterfacesASWell()
+        </h2>
+<pre>testMethodsComeFromDescendentInterfacesASWell() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testMethodsComeFromDescendentInterfacesInAbstractClass"></a><div class="element clickable method public method_testMethodsComeFromDescendentInterfacesInAbstractClass" data-toggle="collapse" data-target=".method_testMethodsComeFromDescendentInterfacesInAbstractClass .collapse">
+<h2>testMethodsComeFromDescendentInterfacesInAbstractClass()
+        </h2>
+<pre>testMethodsComeFromDescendentInterfacesInAbstractClass() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testMethodsListFromClass"></a><div class="element clickable method public method_testMethodsListFromClass" data-toggle="collapse" data-target=".method_testMethodsListFromClass .collapse">
+<h2>testMethodsListFromClass()
+        </h2>
+<pre>testMethodsListFromClass() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testMethodsListFromInterface"></a><div class="element clickable method public method_testMethodsListFromInterface" data-toggle="collapse" data-target=".method_testMethodsListFromInterface .collapse">
+<h2>testMethodsListFromInterface()
+        </h2>
+<pre>testMethodsListFromInterface() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testNoParameterCreationWhenNoInterface"></a><div class="element clickable method public method_testNoParameterCreationWhenNoInterface" data-toggle="collapse" data-target=".method_testNoParameterCreationWhenNoInterface .collapse">
+<h2>testNoParameterCreationWhenNoInterface()
+        </h2>
+<pre>testNoParameterCreationWhenNoInterface() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testParameterCreationForTypeHinting"></a><div class="element clickable method public method_testParameterCreationForTypeHinting" data-toggle="collapse" data-target=".method_testParameterCreationForTypeHinting .collapse">
+<h2>testParameterCreationForTypeHinting()
+        </h2>
+<pre>testParameterCreationForTypeHinting() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testParameterCreationWithoutTypeHinting"></a><div class="element clickable method public method_testParameterCreationWithoutTypeHinting" data-toggle="collapse" data-target=".method_testParameterCreationWithoutTypeHinting .collapse">
+<h2>testParameterCreationWithoutTypeHinting()
+        </h2>
+<pre>testParameterCreationWithoutTypeHinting() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface"></a><div class="element clickable method public method_testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface" data-toggle="collapse" data-target=".method_testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface .collapse">
+<h2>testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface()
+        </h2>
+<pre>testProperlyReflectsTheFinalInterfaceWhenObjectImplementsAnExtendedInterface() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_testUnsetFunctionSignature"></a><div class="element clickable method public method_testUnsetFunctionSignature" data-toggle="collapse" data-target=".method_testUnsetFunctionSignature .collapse">
+<h2>testUnsetFunctionSignature()
+        </h2>
+<pre>testUnsetFunctionSignature() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_coerceExpectation"></a><div class="element clickable method protected method_coerceExpectation" data-toggle="collapse" data-target=".method_coerceExpectation .collapse">
+<h2>Creates an equality expectation if the
+   object/value is not already some type
+   of expectation.</h2>
+<pre>coerceExpectation($expected) : <a href="../classes/SimpleExpectation.html">\SimpleExpectation</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $expected      Expected value.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::coerceExpectation()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$expected</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/SimpleExpectation.html">\SimpleExpectation</a></code>Expectation object.
+   @access private</div>
+</div></div>
+</div>
+<a id="method_isTest"></a><div class="element clickable method protected method_isTest" data-toggle="collapse" data-target=".method_isTest .collapse">
+<h2>Tests to see if the method is a test that should
+   be run.</h2>
+<pre>isTest(string $method) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Currently any method that starts with 'test'
+   is a candidate unless it is the constructor.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::isTest()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::isTest()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method name to try. @return boolean True if test method. @access protected</p>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_reporter"> </a><div class="element clickable property protected property_reporter" data-toggle="collapse" data-target=".property_reporter .collapse">
+<h2></h2>
+<pre>$reporter </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::$$reporter</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::$$reporter</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_label"> </a><div class="element clickable property private property_label" data-toggle="collapse" data-target=".property_label .collapse">
+<h2></h2>
+<pre>$label </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::$$label</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::$$label</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_observers"> </a><div class="element clickable property private property_observers" data-toggle="collapse" data-target=".property_observers .collapse">
+<h2></h2>
+<pre>$observers </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::$$observers</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::$$observers</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_should_skip"> </a><div class="element clickable property private property_should_skip" data-toggle="collapse" data-target=".property_should_skip .collapse">
+<h2></h2>
+<pre>$should_skip </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\SimpleTestCase::$$should_skip</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\UnitTestCase::$$should_skip</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:50+01:00.<br></footer></div>
+</div>
+</body>
+</html>

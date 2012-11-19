@@ -1,0 +1,393 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \MockGenerator</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Builds initial reflection object."><span class="description">Builds initial reflection object.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_generate" title="generate :: Clones a class' interface and creates a mock version
+   that can have return values and expectations set."><span class="description">Clones a class' interface and creates a mock version
+   that can have return values and expectations set.</span><pre>generate()</pre></a></li>
+<li class="method public "><a href="#method_generatePartial" title="generatePartial :: Generates a version of a class with selected
+   methods mocked only."><span class="description">Generates a version of a class with selected
+   methods mocked only.</span><pre>generatePartial()</pre></a></li>
+<li class="method public "><a href="#method_generateSubclass" title="generateSubclass :: Subclasses a class and overrides every method with a mock one
+   that can have return values and expectations set."><span class="description">Subclasses a class and overrides every method with a mock one
+   that can have return values and expectations set.</span><pre>generateSubclass()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_addMethodList" title="addMethodList :: Creates a list of mocked methods for error checking."><span class="description">Creates a list of mocked methods for error checking.</span><pre>addMethodList()</pre></a></li>
+<li class="method protected "><a href="#method_bailOutIfNotMocked" title="bailOutIfNotMocked :: Creates code to abandon the expectation if not mocked."><span class="description">Creates code to abandon the expectation if not mocked.</span><pre>bailOutIfNotMocked()</pre></a></li>
+<li class="method protected "><a href="#method_chainMockExpectations" title="chainMockExpectations :: Creates source code for chaining to an aggregated
+   mock object."><span class="description">Creates source code for chaining to an aggregated
+   mock object.</span><pre>chainMockExpectations()</pre></a></li>
+<li class="method protected "><a href="#method_chainMockReturns" title="chainMockReturns :: Creates source code for chaining to the composited
+   mock object."><span class="description">Creates source code for chaining to the composited
+   mock object.</span><pre>chainMockReturns()</pre></a></li>
+<li class="method protected "><a href="#method_chainThrowMethods" title="chainThrowMethods :: Adds code for chaining the throw methods."><span class="description">Adds code for chaining the throw methods.</span><pre>chainThrowMethods()</pre></a></li>
+<li class="method protected "><a href="#method_createClassCode" title="createClassCode :: The new mock class code as a string."><span class="description">The new mock class code as a string.</span><pre>createClassCode()</pre></a></li>
+<li class="method protected "><a href="#method_createHandlerCode" title="createHandlerCode :: Creates code within a class to generate replaced
+   methods."><span class="description">Creates code within a class to generate replaced
+   methods.</span><pre>createHandlerCode()</pre></a></li>
+<li class="method protected "><a href="#method_createNewMethodCode" title="createNewMethodCode :: Creates code within a class to generate a new
+   methods."><span class="description">Creates code within a class to generate a new
+   methods.</span><pre>createNewMethodCode()</pre></a></li>
+<li class="method protected "><a href="#method_createSubclassCode" title="createSubclassCode :: The new mock class code as a string."><span class="description">The new mock class code as a string.</span><pre>createSubclassCode()</pre></a></li>
+<li class="method protected "><a href="#method_extendClassCode" title="extendClassCode :: The extension class code as a string."><span class="description">The extension class code as a string.</span><pre>extendClassCode()</pre></a></li>
+<li class="method protected "><a href="#method_isConstructor" title="isConstructor :: Tests to see if a special PHP method is about to
+   be stubbed by mistake."><span class="description">Tests to see if a special PHP method is about to
+   be stubbed by mistake.</span><pre>isConstructor()</pre></a></li>
+<li class="method protected "><a href="#method_overrideMethods" title="overrideMethods :: Creates source code to override a list of methods
+   with mock versions."><span class="description">Creates source code to override a list of methods
+   with mock versions.</span><pre>overrideMethods()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_class" title="$class :: "><span class="description"></span><pre>$class</pre></a></li>
+<li class="property private "><a href="#property_mock_base" title="$mock_base :: "><span class="description"></span><pre>$mock_base</pre></a></li>
+<li class="property private "><a href="#property_mock_class" title="$mock_class :: "><span class="description"></span><pre>$mock_class</pre></a></li>
+<li class="property private "><a href="#property_reflection" title="$reflection :: "><span class="description"></span><pre>$reflection</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\MockGenerator"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/MockGenerator.html">MockGenerator</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Service class for code generation of mock objects.</p>
+<div class="details">
+<div class="long_description"><p>@package SimpleTest</p></div>
+<table class="table table-bordered"><tr>
+<th>subpackage</th>
+<td>MockObjects</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Builds initial reflection object.</h2>
+<pre>__construct($class, string $mock_class) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $class        Class to be mocked.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$class</h4></div>
+<div class="subelement argument">
+<h4>$mock_class</h4>
+<code>string</code><p>New class with identical interface, but no behaviour.</p></div>
+</div></div>
+</div>
+<a id="method_generate"></a><div class="element clickable method public method_generate" data-toggle="collapse" data-target=".method_generate .collapse">
+<h2>Clones a class' interface and creates a mock version
+   that can have return values and expectations set.</h2>
+<pre>generate($methods) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $methods        Additional methods to add beyond
+                                those in th cloned class. Use this
+                                to emulate the dynamic addition of
+                                methods in the cloned class or when
+                                the class hasn't been written yet.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$methods</h4></div>
+</div></div>
+</div>
+<a id="method_generatePartial"></a><div class="element clickable method public method_generatePartial" data-toggle="collapse" data-target=".method_generatePartial .collapse">
+<h2>Generates a version of a class with selected
+   methods mocked only.</h2>
+<pre>generatePartial(array $methods) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Inherits the old class
+   and chains the mock methods of an aggregated
+   mock object.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$methods</h4>
+<code>array</code><p>Methods to be overridden with mock versions.</p></div>
+</div></div>
+</div>
+<a id="method_generateSubclass"></a><div class="element clickable method public method_generateSubclass" data-toggle="collapse" data-target=".method_generateSubclass .collapse">
+<h2>Subclasses a class and overrides every method with a mock one
+   that can have return values and expectations set.</h2>
+<pre>generateSubclass(array $methods) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Chains
+   to an aggregated SimpleMock.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$methods</h4>
+<code>array</code><p>Additional methods to add beyond those in the cloned class. Use this to emulate the dynamic addition of methods in the cloned class or when the class hasn't been written yet.</p>
+</div>
+</div></div>
+</div>
+<a id="method_addMethodList"></a><div class="element clickable method protected method_addMethodList" data-toggle="collapse" data-target=".method_addMethodList .collapse">
+<h2>Creates a list of mocked methods for error checking.</h2>
+<pre>addMethodList($methods) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $methods       Mocked methods.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$methods</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Code for a method list.</div>
+</div></div>
+</div>
+<a id="method_bailOutIfNotMocked"></a><div class="element clickable method protected method_bailOutIfNotMocked" data-toggle="collapse" data-target=".method_bailOutIfNotMocked .collapse">
+<h2>Creates code to abandon the expectation if not mocked.</h2>
+<pre>bailOutIfNotMocked($alias) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $alias       Parameter name of method name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$alias</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Code for bail out.</div>
+</div></div>
+</div>
+<a id="method_chainMockExpectations"></a><div class="element clickable method protected method_chainMockExpectations" data-toggle="collapse" data-target=".method_chainMockExpectations .collapse">
+<h2>Creates source code for chaining to an aggregated
+   mock object.</h2>
+<pre>chainMockExpectations() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@return string                 Code for expectations.</p></div></div></div>
+</div>
+<a id="method_chainMockReturns"></a><div class="element clickable method protected method_chainMockReturns" data-toggle="collapse" data-target=".method_chainMockReturns .collapse">
+<h2>Creates source code for chaining to the composited
+   mock object.</h2>
+<pre>chainMockReturns() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@return string           Code for mock set up.</p></div></div></div>
+</div>
+<a id="method_chainThrowMethods"></a><div class="element clickable method protected method_chainThrowMethods" data-toggle="collapse" data-target=".method_chainThrowMethods .collapse">
+<h2>Adds code for chaining the throw methods.</h2>
+<pre>chainThrowMethods() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@return string           Code for chains.</p></div></div></div>
+</div>
+<a id="method_createClassCode"></a><div class="element clickable method protected method_createClassCode" data-toggle="collapse" data-target=".method_createClassCode .collapse">
+<h2>The new mock class code as a string.</h2>
+<pre>createClassCode($methods) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $methods          Additional methods.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$methods</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Code for new mock class.</div>
+</div></div>
+</div>
+<a id="method_createHandlerCode"></a><div class="element clickable method protected method_createHandlerCode" data-toggle="collapse" data-target=".method_createHandlerCode .collapse">
+<h2>Creates code within a class to generate replaced
+   methods.</h2>
+<pre>createHandlerCode(array $methods) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>All methods call the invoke() handler
+   with the method name and the arguments in an
+   array.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$methods</h4>
+<code>array</code><p>Additional methods.</p></div>
+</div></div>
+</div>
+<a id="method_createNewMethodCode"></a><div class="element clickable method protected method_createNewMethodCode" data-toggle="collapse" data-target=".method_createNewMethodCode .collapse">
+<h2>Creates code within a class to generate a new
+   methods.</h2>
+<pre>createNewMethodCode(array $methods) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>All methods call the invoke() handler
+   on the internal mock with the method name and
+   the arguments in an array.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$methods</h4>
+<code>array</code><p>Additional methods.</p></div>
+</div></div>
+</div>
+<a id="method_createSubclassCode"></a><div class="element clickable method protected method_createSubclassCode" data-toggle="collapse" data-target=".method_createSubclassCode .collapse">
+<h2>The new mock class code as a string.</h2>
+<pre>createSubclassCode(array $methods) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The mock will
+   be a subclass of the original mocked class.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$methods</h4>
+<code>array</code><p>Additional methods. @return string Code for new mock class.</p>
+</div>
+</div></div>
+</div>
+<a id="method_extendClassCode"></a><div class="element clickable method protected method_extendClassCode" data-toggle="collapse" data-target=".method_extendClassCode .collapse">
+<h2>The extension class code as a string.</h2>
+<pre>extendClassCode(array $methods) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The class
+   composites a mock object and chains mocked methods
+   to it.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$methods</h4>
+<code>array</code><p>Mocked methods. @return string Code for a new class.</p>
+</div>
+</div></div>
+</div>
+<a id="method_isConstructor"></a><div class="element clickable method protected method_isConstructor" data-toggle="collapse" data-target=".method_isConstructor .collapse">
+<h2>Tests to see if a special PHP method is about to
+   be stubbed by mistake.</h2>
+<pre>isConstructor($method) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method    Method name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if special.</div>
+</div></div>
+</div>
+<a id="method_overrideMethods"></a><div class="element clickable method protected method_overrideMethods" data-toggle="collapse" data-target=".method_overrideMethods .collapse">
+<h2>Creates source code to override a list of methods
+   with mock versions.</h2>
+<pre>overrideMethods($methods) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $methods    Methods to be overridden
+                            with mock versions.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$methods</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Code for overridden chains.</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_class"> </a><div class="element clickable property private property_class" data-toggle="collapse" data-target=".property_class .collapse">
+<h2></h2>
+<pre>$class </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_mock_base"> </a><div class="element clickable property private property_mock_base" data-toggle="collapse" data-target=".property_mock_base .collapse">
+<h2></h2>
+<pre>$mock_base </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_mock_class"> </a><div class="element clickable property private property_mock_class" data-toggle="collapse" data-target=".property_mock_class .collapse">
+<h2></h2>
+<pre>$mock_class </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_reflection"> </a><div class="element clickable property private property_reflection" data-toggle="collapse" data-target=".property_reflection .collapse">
+<h2></h2>
+<pre>$reflection </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:10+01:00.<br></footer></div>
+</div>
+</body>
+</html>

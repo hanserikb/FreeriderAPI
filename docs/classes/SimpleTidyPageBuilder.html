@@ -1,0 +1,515 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \SimpleTidyPageBuilder</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___destruct" title="__destruct :: "><span class="description">__destruct()
+        </span><pre>__destruct()</pre></a></li>
+<li class="method public "><a href="#method_can" title="can :: This builder is only available if the 'tidy' extension is loaded."><span class="description">This builder is only available if the 'tidy' extension is loaded.</span><pre>can()</pre></a></li>
+<li class="method public "><a href="#method_parse" title="parse :: Reads the raw content the page using HTML Tidy."><span class="description">Reads the raw content the page using HTML Tidy.</span><pre>parse()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_addWidgetToForm" title="addWidgetToForm :: Adds the widget into the form container."><span class="description">Adds the widget into the form container.</span><pre>addWidgetToForm()</pre></a></li>
+<li class="method private "><a href="#method_attachLabels" title="attachLabels :: Called at the end of a parse run."><span class="description">Called at the end of a parse run.</span><pre>attachLabels()</pre></a></li>
+<li class="method private "><a href="#method_attributes" title="attributes :: Convenience method for collecting all the attributes
+ of a tag."><span class="description">Convenience method for collecting all the attributes
+ of a tag.</span><pre>attributes()</pre></a></li>
+<li class="method private "><a href="#method_collectFrames" title="collectFrames :: Collects frame information inside a frameset tag."><span class="description">Collects frame information inside a frameset tag.</span><pre>collectFrames()</pre></a></li>
+<li class="method private "><a href="#method_collectSelectOptions" title="collectSelectOptions :: Parses the options from inside an XML select node."><span class="description">Parses the options from inside an XML select node.</span><pre>collectSelectOptions()</pre></a></li>
+<li class="method private "><a href="#method_createEmptyForm" title="createEmptyForm :: Facade for forms containing preparsed widgets."><span class="description">Facade for forms containing preparsed widgets.</span><pre>createEmptyForm()</pre></a></li>
+<li class="method private "><a href="#method_dequote" title="dequote :: Remove start and end quotes."><span class="description">Remove start and end quotes.</span><pre>dequote()</pre></a></li>
+<li class="method private "><a href="#method_free" title="free :: Frees up any references so as to allow the PHP garbage
+   collection from unset() to work."><span class="description">Frees up any references so as to allow the PHP garbage
+   collection from unset() to work.</span><pre>free()</pre></a></li>
+<li class="method private "><a href="#method_hasFor" title='hasFor :: Tests a node for a "for" atribute.'><span class="description">Tests a node for a "for" atribute.</span><pre>hasFor()</pre></a></li>
+<li class="method private "><a href="#method_indexWidgetById" title="indexWidgetById :: Fills the widget cache to speed up searching."><span class="description">Fills the widget cache to speed up searching.</span><pre>indexWidgetById()</pre></a></li>
+<li class="method private "><a href="#method_innerHtml" title="innerHtml :: Extracts the XML node text."><span class="description">Extracts the XML node text.</span><pre>innerHtml()</pre></a></li>
+<li class="method private "><a href="#method_insertEmptyTagGuards" title="insertEmptyTagGuards :: HTML tidy strips out empty tags such as &lt;option&gt; which we
+   need to preserve."><span class="description">HTML tidy strips out empty tags such as &lt;option&gt; which we
+   need to preserve.</span><pre>insertEmptyTagGuards()</pre></a></li>
+<li class="method private "><a href="#method_insertGuards" title="insertGuards :: Stops HTMLTidy stripping content that we wish to preserve."><span class="description">Stops HTMLTidy stripping content that we wish to preserve.</span><pre>insertGuards()</pre></a></li>
+<li class="method private "><a href="#method_insertTextareaSimpleWhitespaceGuards" title="insertTextareaSimpleWhitespaceGuards :: By parsing the XML output of tidy, we lose some whitespace
+   information in textarea tags."><span class="description">By parsing the XML output of tidy, we lose some whitespace
+   information in textarea tags.</span><pre>insertTextareaSimpleWhitespaceGuards()</pre></a></li>
+<li class="method private "><a href="#method_insertWhitespaceGuards" title="insertWhitespaceGuards :: Callback for insertTextareaSimpleWhitespaceGuards()."><span class="description">Callback for insertTextareaSimpleWhitespaceGuards().</span><pre>insertWhitespaceGuards()</pre></a></li>
+<li class="method private "><a href="#method_mergeAttribute" title="mergeAttribute :: Overlay an attribute into the attributes hash."><span class="description">Overlay an attribute into the attributes hash.</span><pre>mergeAttribute()</pre></a></li>
+<li class="method private "><a href="#method_stripEmptyTagGuards" title="stripEmptyTagGuards :: HTML tidy strips out empty tags such as &lt;option&gt; which we
+   need to preserve."><span class="description">HTML tidy strips out empty tags such as &lt;option&gt; which we
+   need to preserve.</span><pre>stripEmptyTagGuards()</pre></a></li>
+<li class="method private "><a href="#method_stripGuards" title="stripGuards :: Removes the extra content added during the parse stage
+   in order to preserve content we don't want stripped
+   out by HTMLTidy."><span class="description">Removes the extra content added during the parse stage
+   in order to preserve content we don't want stripped
+   out by HTMLTidy.</span><pre>stripGuards()</pre></a></li>
+<li class="method private "><a href="#method_stripTextareaWhitespaceGuards" title="stripTextareaWhitespaceGuards :: Removes the whitespace preserving guards we added
+   before parsing."><span class="description">Removes the whitespace preserving guards we added
+   before parsing.</span><pre>stripTextareaWhitespaceGuards()</pre></a></li>
+<li class="method private "><a href="#method_tags" title="tags :: Factory for parsed content holders."><span class="description">Factory for parsed content holders.</span><pre>tags()</pre></a></li>
+<li class="method private "><a href="#method_walkChildren" title="walkChildren :: Helper method for traversing the XML tree."><span class="description">Helper method for traversing the XML tree.</span><pre>walkChildren()</pre></a></li>
+<li class="method private "><a href="#method_walkForm" title="walkForm :: Visits the given node and all children"><span class="description">Visits the given node and all children</span><pre>walkForm()</pre></a></li>
+<li class="method private "><a href="#method_walkTree" title="walkTree :: Visits the given node and all children"><span class="description">Visits the given node and all children</span><pre>walkTree()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_forms" title="$forms :: "><span class="description"></span><pre>$forms</pre></a></li>
+<li class="property private "><a href="#property_labels" title="$labels :: "><span class="description"></span><pre>$labels</pre></a></li>
+<li class="property private "><a href="#property_page" title="$page :: "><span class="description"></span><pre>$page</pre></a></li>
+<li class="property private "><a href="#property_widgets_by_id" title="$widgets_by_id :: "><span class="description"></span><pre>$widgets_by_id</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\SimpleTidyPageBuilder"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/SimpleTidyPageBuilder.html">SimpleTidyPageBuilder</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Builds the page object.</p>
+<div class="details">
+<div class="long_description"><p>@package SimpleTest</p></div>
+<table class="table table-bordered"><tr>
+<th>subpackage</th>
+<td>WebTester</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___destruct"></a><div class="element clickable method public method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse">
+<h2>__destruct()
+        </h2>
+<pre>__destruct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_can"></a><div class="element clickable method public method_can" data-toggle="collapse" data-target=".method_can .collapse">
+<h2>This builder is only available if the 'tidy' extension is loaded.</h2>
+<pre>can() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@return boolean       True if available.</p></div></div></div>
+</div>
+<a id="method_parse"></a><div class="element clickable method public method_parse" data-toggle="collapse" data-target=".method_parse .collapse">
+<h2>Reads the raw content the page using HTML Tidy.</h2>
+<pre>parse($response) : <a href="../classes/SimplePage.html">\SimplePage</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param $response SimpleHttpResponse  Fetched response.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$response</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/SimplePage.html">\SimplePage</a></code>Newly parsed page.</div>
+</div></div>
+</div>
+<a id="method_addWidgetToForm"></a><div class="element clickable method private method_addWidgetToForm" data-toggle="collapse" data-target=".method_addWidgetToForm .collapse">
+<h2>Adds the widget into the form container.</h2>
+<pre>addWidgetToForm($node, <a href="../classes/SimpleForm.html">\SimpleForm</a> $form, $enclosing_label) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node             Tidy XML node of widget.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+<div class="subelement argument">
+<h4>$form</h4>
+<code><a href="../classes/SimpleForm.html">\SimpleForm</a></code><p>Form to add it to. @param string $enclosing_label The label of any label tag we might be in.</p>
+</div>
+<div class="subelement argument"><h4>$enclosing_label</h4></div>
+</div></div>
+</div>
+<a id="method_attachLabels"></a><div class="element clickable method private method_attachLabels" data-toggle="collapse" data-target=".method_attachLabels .collapse">
+<h2>Called at the end of a parse run.</h2>
+<pre>attachLabels(array $widgets_by_id, $labels) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Attaches any
+ non-wrapping labels to their form elements.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$widgets_by_id</h4>
+<code>array</code><p>Cached SimpleTag hash. @param array $labels SimpleTag label elements.</p>
+</div>
+<div class="subelement argument"><h4>$labels</h4></div>
+</div></div>
+</div>
+<a id="method_attributes"></a><div class="element clickable method private method_attributes" data-toggle="collapse" data-target=".method_attributes .collapse">
+<h2>Convenience method for collecting all the attributes
+ of a tag.</h2>
+<pre>attributes(object $node) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Not sure why Tidy does not have this.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$node</h4>
+<code>object</code><p>Tidy XML node. @return array Hash of attribute strings.</p>
+</div>
+</div></div>
+</div>
+<a id="method_collectFrames"></a><div class="element clickable method private method_collectFrames" data-toggle="collapse" data-target=".method_collectFrames .collapse">
+<h2>Collects frame information inside a frameset tag.</h2>
+<pre>collectFrames($node) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node     Tidy XML node.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>List of SimpleTag frame descriptions.</div>
+</div></div>
+</div>
+<a id="method_collectSelectOptions"></a><div class="element clickable method private method_collectSelectOptions" data-toggle="collapse" data-target=".method_collectSelectOptions .collapse">
+<h2>Parses the options from inside an XML select node.</h2>
+<pre>collectSelectOptions($node) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node      Tidy XML node.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>List of SimpleTag options.</div>
+</div></div>
+</div>
+<a id="method_createEmptyForm"></a><div class="element clickable method private method_createEmptyForm" data-toggle="collapse" data-target=".method_createEmptyForm .collapse">
+<h2>Facade for forms containing preparsed widgets.</h2>
+<pre>createEmptyForm($node) : <a href="../classes/SimpleForm.html">\SimpleForm</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node     Tidy XML node.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/SimpleForm.html">\SimpleForm</a></code>Facade for SimpleBrowser.</div>
+</div></div>
+</div>
+<a id="method_dequote"></a><div class="element clickable method private method_dequote" data-toggle="collapse" data-target=".method_dequote .collapse">
+<h2>Remove start and end quotes.</h2>
+<pre>dequote($quoted) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $quoted    A quoted string.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$quoted</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Quotes are gone.</div>
+</div></div>
+</div>
+<a id="method_free"></a><div class="element clickable method private method_free" data-toggle="collapse" data-target=".method_free .collapse">
+<h2>Frees up any references so as to allow the PHP garbage
+   collection from unset() to work.</h2>
+<pre>free() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_hasFor"></a><div class="element clickable method private method_hasFor" data-toggle="collapse" data-target=".method_hasFor .collapse">
+<h2>Tests a node for a "for" atribute.</h2>
+<pre>hasFor(object $node) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Used for
+ attaching labels.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$node</h4>
+<code>object</code><p>Tidy XML node. @return boolean True if the "for" attribute exists.</p>
+</div>
+</div></div>
+</div>
+<a id="method_indexWidgetById"></a><div class="element clickable method private method_indexWidgetById" data-toggle="collapse" data-target=".method_indexWidgetById .collapse">
+<h2>Fills the widget cache to speed up searching.</h2>
+<pre>indexWidgetById($widget) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param SimpleTag $widget    Parsed widget to cache.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$widget</h4></div>
+</div></div>
+</div>
+<a id="method_innerHtml"></a><div class="element clickable method private method_innerHtml" data-toggle="collapse" data-target=".method_innerHtml .collapse">
+<h2>Extracts the XML node text.</h2>
+<pre>innerHtml($node) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node     Tidy XML node.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The text only.</div>
+</div></div>
+</div>
+<a id="method_insertEmptyTagGuards"></a><div class="element clickable method private method_insertEmptyTagGuards" data-toggle="collapse" data-target=".method_insertEmptyTagGuards .collapse">
+<h2>HTML tidy strips out empty tags such as &lt;option&gt; which we
+   need to preserve.</h2>
+<pre>insertEmptyTagGuards(string $html) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method inserts an additional marker.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>The raw html. @return string The html with guards inserted.</p>
+</div>
+</div></div>
+</div>
+<a id="method_insertGuards"></a><div class="element clickable method private method_insertGuards" data-toggle="collapse" data-target=".method_insertGuards .collapse">
+<h2>Stops HTMLTidy stripping content that we wish to preserve.</h2>
+<pre>insertGuards($html) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string      The raw html.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$html</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The html with guard tags inserted.</div>
+</div></div>
+</div>
+<a id="method_insertTextareaSimpleWhitespaceGuards"></a><div class="element clickable method private method_insertTextareaSimpleWhitespaceGuards" data-toggle="collapse" data-target=".method_insertTextareaSimpleWhitespaceGuards .collapse">
+<h2>By parsing the XML output of tidy, we lose some whitespace
+   information in textarea tags.</h2>
+<pre>insertTextareaSimpleWhitespaceGuards(string $html) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>We temporarily recode this
+   data ourselves so as not to lose it.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>The raw html. @return string The html with guards inserted.</p>
+</div>
+</div></div>
+</div>
+<a id="method_insertWhitespaceGuards"></a><div class="element clickable method private method_insertWhitespaceGuards" data-toggle="collapse" data-target=".method_insertWhitespaceGuards .collapse">
+<h2>Callback for insertTextareaSimpleWhitespaceGuards().</h2>
+<pre>insertWhitespaceGuards($matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $matches       Result of preg_replace_callback().</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$matches</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Guard tags now replace whitespace.</div>
+</div></div>
+</div>
+<a id="method_mergeAttribute"></a><div class="element clickable method private method_mergeAttribute" data-toggle="collapse" data-target=".method_mergeAttribute .collapse">
+<h2>Overlay an attribute into the attributes hash.</h2>
+<pre>mergeAttribute($attributes, string $raw) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $attributes        Current attribute list.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$attributes</h4></div>
+<div class="subelement argument">
+<h4>$raw</h4>
+<code>string</code><p>Raw attribute string with both key and value. @return array New attribute hash.</p>
+</div>
+</div></div>
+</div>
+<a id="method_stripEmptyTagGuards"></a><div class="element clickable method private method_stripEmptyTagGuards" data-toggle="collapse" data-target=".method_stripEmptyTagGuards .collapse">
+<h2>HTML tidy strips out empty tags such as &lt;option&gt; which we
+   need to preserve.</h2>
+<pre>stripEmptyTagGuards(string $html) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method strips additional markers
+   inserted by SimpleTest to the tidy output used to make the
+   tags non-empty. This ensures their preservation.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>The raw html. @return string The html with guards removed.</p>
+</div>
+</div></div>
+</div>
+<a id="method_stripGuards"></a><div class="element clickable method private method_stripGuards" data-toggle="collapse" data-target=".method_stripGuards .collapse">
+<h2>Removes the extra content added during the parse stage
+   in order to preserve content we don't want stripped
+   out by HTMLTidy.</h2>
+<pre>stripGuards($html) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string      The raw html.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$html</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The html with guard tags removed.</div>
+</div></div>
+</div>
+<a id="method_stripTextareaWhitespaceGuards"></a><div class="element clickable method private method_stripTextareaWhitespaceGuards" data-toggle="collapse" data-target=".method_stripTextareaWhitespaceGuards .collapse">
+<h2>Removes the whitespace preserving guards we added
+   before parsing.</h2>
+<pre>stripTextareaWhitespaceGuards($html) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string      The raw html.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$html</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The html with guards removed.</div>
+</div></div>
+</div>
+<a id="method_tags"></a><div class="element clickable method private method_tags" data-toggle="collapse" data-target=".method_tags .collapse">
+<h2>Factory for parsed content holders.</h2>
+<pre>tags() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@return SimpleTagBuilder    Factory.</p></div></div></div>
+</div>
+<a id="method_walkChildren"></a><div class="element clickable method private method_walkChildren" data-toggle="collapse" data-target=".method_walkChildren .collapse">
+<h2>Helper method for traversing the XML tree.</h2>
+<pre>walkChildren($node) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node     Tidy XML node.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+</div></div>
+</div>
+<a id="method_walkForm"></a><div class="element clickable method private method_walkForm" data-toggle="collapse" data-target=".method_walkForm .collapse">
+<h2>Visits the given node and all children</h2>
+<pre>walkForm($node, $form, $enclosing_label) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node      Tidy XML node.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+<div class="subelement argument"><h4>$form</h4></div>
+<div class="subelement argument"><h4>$enclosing_label</h4></div>
+</div></div>
+</div>
+<a id="method_walkTree"></a><div class="element clickable method private method_walkTree" data-toggle="collapse" data-target=".method_walkTree .collapse">
+<h2>Visits the given node and all children</h2>
+<pre>walkTree($node) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param object $node      Tidy XML node.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$node</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_forms"> </a><div class="element clickable property private property_forms" data-toggle="collapse" data-target=".property_forms .collapse">
+<h2></h2>
+<pre>$forms </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_labels"> </a><div class="element clickable property private property_labels" data-toggle="collapse" data-target=".property_labels .collapse">
+<h2></h2>
+<pre>$labels </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_page"> </a><div class="element clickable property private property_page" data-toggle="collapse" data-target=".property_page .collapse">
+<h2></h2>
+<pre>$page </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_widgets_by_id"> </a><div class="element clickable property private property_widgets_by_id" data-toggle="collapse" data-target=".property_widgets_by_id .collapse">
+<h2></h2>
+<pre>$widgets_by_id </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:25:00+01:00.<br></footer></div>
+</div>
+</body>
+</html>

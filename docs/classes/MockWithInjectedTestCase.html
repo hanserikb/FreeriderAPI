@@ -1,0 +1,1041 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \MockWithInjectedTestCase</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method_SimpleMock" title="SimpleMock :: Creates an empty action list and expectation list."><span class="description">Creates an empty action list and expectation list.</span><pre>SimpleMock()</pre></a></li>
+<li class="method public inherited"><a href="#method_atTestEnd" title="atTestEnd :: Receives event from unit test that the current
+   test method has finished."><span class="description">Receives event from unit test that the current
+   test method has finished.</span><pre>atTestEnd()</pre></a></li>
+<li class="method public inherited"><a href="#method_disableExpectationNameChecks" title="disableExpectationNameChecks :: Disables a name check when setting expectations."><span class="description">Disables a name check when setting expectations.</span><pre>disableExpectationNameChecks()</pre></a></li>
+<li class="method public inherited"><a href="#method_errorAt" title="errorAt :: Sets up a trigger to throw an error upon a specific
+   method call."><span class="description">Sets up a trigger to throw an error upon a specific
+   method call.</span><pre>errorAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_errorOn" title="errorOn :: Sets up a trigger to throw an error upon the
+   method call."><span class="description">Sets up a trigger to throw an error upon the
+   method call.</span><pre>errorOn()</pre></a></li>
+<li class="method public inherited"><a href="#method_expect" title="expect :: Sets up an expected call with a set of
+   expected parameters in that call."><span class="description">Sets up an expected call with a set of
+   expected parameters in that call.</span><pre>expect()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectAt" title="expectAt :: Sets up an expected call with a set of
+   expected parameters in that call."><span class="description">Sets up an expected call with a set of
+   expected parameters in that call.</span><pre>expectAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectAtLeastOnce" title="expectAtLeastOnce :: Convenience method for requiring a method
+   call."><span class="description">Convenience method for requiring a method
+   call.</span><pre>expectAtLeastOnce()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectCallCount" title="expectCallCount :: Sets an expectation for the number of times
+   a method will be called."><span class="description">Sets an expectation for the number of times
+   a method will be called.</span><pre>expectCallCount()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectMaximumCallCount" title="expectMaximumCallCount :: Sets the number of times a method may be called
+   before a test failure is triggered."><span class="description">Sets the number of times a method may be called
+   before a test failure is triggered.</span><pre>expectMaximumCallCount()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectMinimumCallCount" title="expectMinimumCallCount :: Sets the number of times to call a method to prevent
+   a failure on the tally."><span class="description">Sets the number of times to call a method to prevent
+   a failure on the tally.</span><pre>expectMinimumCallCount()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectNever" title="expectNever :: Convenience method for barring a method
+   call."><span class="description">Convenience method for barring a method
+   call.</span><pre>expectNever()</pre></a></li>
+<li class="method public inherited"><a href="#method_expectOnce" title="expectOnce :: Convenience method for a single method
+   call."><span class="description">Convenience method for a single method
+   call.</span><pre>expectOnce()</pre></a></li>
+<li class="method public inherited"><a href="#method_getCallCount" title="getCallCount :: Fetches the call count of a method so far."><span class="description">Fetches the call count of a method so far.</span><pre>getCallCount()</pre></a></li>
+<li class="method public inherited"><a href="#method_invoke" title="invoke :: Returns the expected value for the method name
+   and checks expectations."><span class="description">Returns the expected value for the method name
+   and checks expectations.</span><pre>invoke()</pre></a></li>
+<li class="method public inherited"><a href="#method_replaceWildcards" title="replaceWildcards :: Replaces wildcard matches with wildcard
+   expectations in the argument list."><span class="description">Replaces wildcard matches with wildcard
+   expectations in the argument list.</span><pre>replaceWildcards()</pre></a></li>
+<li class="method public inherited"><a href="#method_returns" title="returns :: Sets a return for a parameter list that will
+   be passed on by all calls to this method that match."><span class="description">Sets a return for a parameter list that will
+   be passed on by all calls to this method that match.</span><pre>returns()</pre></a></li>
+<li class="method public inherited"><a href="#method_returnsAt" title="returnsAt :: Sets a return for a parameter list that will
+   be passed only when the required call count
+   is reached."><span class="description">Sets a return for a parameter list that will
+   be passed only when the required call count
+   is reached.</span><pre>returnsAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_returnsByReference" title="returnsByReference :: Sets a return for a parameter list that will
+   be passed by reference for all calls."><span class="description">Sets a return for a parameter list that will
+   be passed by reference for all calls.</span><pre>returnsByReference()</pre></a></li>
+<li class="method public inherited"><a href="#method_returnsByReferenceAt" title="returnsByReferenceAt :: Sets a return for a parameter list that will
+   be passed by value only when the required call count
+   is reached."><span class="description">Sets a return for a parameter list that will
+   be passed by value only when the required call count
+   is reached.</span><pre>returnsByReferenceAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_returnsByValue" title="returnsByValue :: Sets a return for a parameter list that will
+   be passed by value for all calls to this method."><span class="description">Sets a return for a parameter list that will
+   be passed by value for all calls to this method.</span><pre>returnsByValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_returnsByValueAt" title="returnsByValueAt :: Sets a return for a parameter list that will
+   be passed by value only when the required call count
+   is reached."><span class="description">Sets a return for a parameter list that will
+   be passed by value only when the required call count
+   is reached.</span><pre>returnsByValueAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_setReturnReference" title="setReturnReference :: "><span class="description">setReturnReference()
+        </span><pre>setReturnReference()</pre></a></li>
+<li class="method public inherited"><a href="#method_setReturnReferenceAt" title="setReturnReferenceAt :: "><span class="description">setReturnReferenceAt()
+        </span><pre>setReturnReferenceAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_setReturnValue" title="setReturnValue :: "><span class="description">setReturnValue()
+        </span><pre>setReturnValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_setReturnValueAt" title="setReturnValueAt :: "><span class="description">setReturnValueAt()
+        </span><pre>setReturnValueAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_throwAt" title="throwAt :: Sets up a trigger to throw an exception upon the
+   method call."><span class="description">Sets up a trigger to throw an exception upon the
+   method call.</span><pre>throwAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_throwOn" title="throwOn :: Sets up a trigger to throw an exception upon the
+   method call."><span class="description">Sets up a trigger to throw an exception upon the
+   method call.</span><pre>throwOn()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_addCall" title="addCall :: Adds one to the call count of a method."><span class="description">Adds one to the call count of a method.</span><pre>addCall()</pre></a></li>
+<li class="method protected inherited"><a href="#method_checkArgumentsIsArray" title="checkArgumentsIsArray :: Die if bad arguments array is passed."><span class="description">Die if bad arguments array is passed.</span><pre>checkArgumentsIsArray()</pre></a></li>
+<li class="method protected inherited"><a href="#method_checkExpectations" title="checkExpectations :: Tests the arguments against expectations."><span class="description">Tests the arguments against expectations.</span><pre>checkExpectations()</pre></a></li>
+<li class="method protected inherited"><a href="#method_dieOnNoMethod" title="dieOnNoMethod :: Triggers a PHP error if the method is not part
+   of this object."><span class="description">Triggers a PHP error if the method is not part
+   of this object.</span><pre>dieOnNoMethod()</pre></a></li>
+<li class="method protected inherited"><a href="#method_emulateCall" title="emulateCall :: Finds the return value matching the incoming
+   arguments."><span class="description">Finds the return value matching the incoming
+   arguments.</span><pre>emulateCall()</pre></a></li>
+<li class="method protected "><a href="#method_getCurrentTestCase" title="getCurrentTestCase :: Finds currently running test."><span class="description">Finds currently running test.</span><pre>getCurrentTestCase()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private inherited"><a href="#method_disableEStrict" title="disableEStrict :: Our mock has to be able to return anything, including
+  variable references."><span class="description">Our mock has to be able to return anything, including
+  variable references.</span><pre>disableEStrict()</pre></a></li>
+<li class="method private inherited"><a href="#method_restoreEStrict" title="restoreEStrict :: Restores the E_STRICT level if it was previously set."><span class="description">Restores the E_STRICT level if it was previously set.</span><pre>restoreEStrict()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private inherited"><a href="#property_actions" title="$actions :: "><span class="description"></span><pre>$actions</pre></a></li>
+<li class="property private inherited"><a href="#property_call_counts" title="$call_counts :: "><span class="description"></span><pre>$call_counts</pre></a></li>
+<li class="property private inherited"><a href="#property_expectations" title="$expectations :: "><span class="description"></span><pre>$expectations</pre></a></li>
+<li class="property private inherited"><a href="#property_expected_args" title="$expected_args :: "><span class="description"></span><pre>$expected_args</pre></a></li>
+<li class="property private inherited"><a href="#property_expected_args_at" title="$expected_args_at :: "><span class="description"></span><pre>$expected_args_at</pre></a></li>
+<li class="property private inherited"><a href="#property_expected_counts" title="$expected_counts :: "><span class="description"></span><pre>$expected_counts</pre></a></li>
+<li class="property private inherited"><a href="#property_is_strict" title="$is_strict :: "><span class="description"></span><pre>$is_strict</pre></a></li>
+<li class="property private inherited"><a href="#property_max_counts" title="$max_counts :: "><span class="description"></span><pre>$max_counts</pre></a></li>
+<li class="property private inherited"><a href="#property_wildcard" title="$wildcard :: "><span class="description"></span><pre>$wildcard</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\MockWithInjectedTestCase"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/MockWithInjectedTestCase.html">MockWithInjectedTestCase</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">A base class or delegate that extends an
+   empty collection of methods that can have their
+   return values set and expectations made of the
+   calls upon them.</p>
+<div class="details">
+<div class="long_description"><p>The mock will assert the
+   expectations against it's attached test case in
+   addition to the server stub behaviour or returning
+   preprogrammed responses.</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">SimpleTest
+   @subpackage MockObjects</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_SimpleMock"></a><div class="element clickable method public method_SimpleMock" data-toggle="collapse" data-target=".method_SimpleMock .collapse">
+<h2>Creates an empty action list and expectation list.</h2>
+<pre>SimpleMock() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>All call counts are set to zero.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::SimpleMock()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_atTestEnd"></a><div class="element clickable method public method_atTestEnd" data-toggle="collapse" data-target=".method_atTestEnd .collapse">
+<h2>Receives event from unit test that the current
+   test method has finished.</h2>
+<pre>atTestEnd(string $test_method, $test) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Totals up the call
+   counts and triggers a test assertion if a test
+   is present for expected call counts.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::atTestEnd()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$test_method</h4>
+<code>string</code><p>Current method name. @param SimpleTestCase $test Test to send message to.</p>
+</div>
+<div class="subelement argument"><h4>$test</h4></div>
+</div></div>
+</div>
+<a id="method_disableExpectationNameChecks"></a><div class="element clickable method public method_disableExpectationNameChecks" data-toggle="collapse" data-target=".method_disableExpectationNameChecks .collapse">
+<h2>Disables a name check when setting expectations.</h2>
+<pre>disableExpectationNameChecks() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This hack is needed for the partial mocks.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::disableExpectationNameChecks()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_errorAt"></a><div class="element clickable method public method_errorAt" data-toggle="collapse" data-target=".method_errorAt .collapse">
+<h2>Sets up a trigger to throw an error upon a specific
+   method call.</h2>
+<pre>errorAt($timing, string $method, $error, $args, $severity) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $timing    When to throw the exception. A
+                             value of 0 throws immediately.
+                             A value of 1 actually allows one call
+                             to this method before throwing. 2
+                             will allow two calls before throwing
+                             and so on.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::errorAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$timing</h4></div>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method name to throw on. @param object $error Error message to trigger. @param array $args Optional argument list filter. If given then the exception will only be thrown if the method call matches the arguments. @param integer $severity The PHP severity level. Defaults to E_USER_ERROR.</p>
+</div>
+<div class="subelement argument"><h4>$error</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+<div class="subelement argument"><h4>$severity</h4></div>
+</div></div>
+</div>
+<a id="method_errorOn"></a><div class="element clickable method public method_errorOn" data-toggle="collapse" data-target=".method_errorOn .collapse">
+<h2>Sets up a trigger to throw an error upon the
+   method call.</h2>
+<pre>errorOn($method, object $error, $args, $severity) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method     Method name to throw on.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::errorOn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$error</h4>
+<code>object</code><p>Error message to trigger. @param array $args Optional argument list filter. If given then the exception will only be thrown if the method call matches the arguments. @param integer $severity The PHP severity level. Defaults to E_USER_ERROR.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+<div class="subelement argument"><h4>$severity</h4></div>
+</div></div>
+</div>
+<a id="method_expect"></a><div class="element clickable method public method_expect" data-toggle="collapse" data-target=".method_expect .collapse">
+<h2>Sets up an expected call with a set of
+   expected parameters in that call.</h2>
+<pre>expect(string $method, $args, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>All
+   calls will be compared to these expectations
+   regardless of when the call is made.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expect()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method call to test. @param array $args Expected parameters for the call including wildcards. @param string $message Overridden message.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_expectAt"></a><div class="element clickable method public method_expectAt" data-toggle="collapse" data-target=".method_expectAt .collapse">
+<h2>Sets up an expected call with a set of
+   expected parameters in that call.</h2>
+<pre>expectAt(integer $timing, $method, $args, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The
+   expected call count will be adjusted if it
+   is set too low to reach this call.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expectAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$timing</h4>
+<code>integer</code><p>Number of calls in the future at which to test. Next call is 0. @param string $method Method call to test. @param array $args Expected parameters for the call including wildcards. @param string $message Overridden message.</p>
+</div>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_expectAtLeastOnce"></a><div class="element clickable method public method_expectAtLeastOnce" data-toggle="collapse" data-target=".method_expectAtLeastOnce .collapse">
+<h2>Convenience method for requiring a method
+   call.</h2>
+<pre>expectAtLeastOnce($method, array $args, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method       Method call to track.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expectAtLeastOnce()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>Expected argument list or false for any arguments. @param string $message Overridden message.</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_expectCallCount"></a><div class="element clickable method public method_expectCallCount" data-toggle="collapse" data-target=".method_expectCallCount .collapse">
+<h2>Sets an expectation for the number of times
+   a method will be called.</h2>
+<pre>expectCallCount(string $method, $count, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The tally method
+   is used to check this.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expectCallCount()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method call to test. @param integer $count Number of times it should have been called at tally. @param string $message Overridden message.</p>
+</div>
+<div class="subelement argument"><h4>$count</h4></div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_expectMaximumCallCount"></a><div class="element clickable method public method_expectMaximumCallCount" data-toggle="collapse" data-target=".method_expectMaximumCallCount .collapse">
+<h2>Sets the number of times a method may be called
+   before a test failure is triggered.</h2>
+<pre>expectMaximumCallCount($method, integer $count, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method        Method call to test.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expectMaximumCallCount()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>integer</code><p>Most number of times it should have been called. @param string $message Overridden message.</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_expectMinimumCallCount"></a><div class="element clickable method public method_expectMinimumCallCount" data-toggle="collapse" data-target=".method_expectMinimumCallCount .collapse">
+<h2>Sets the number of times to call a method to prevent
+   a failure on the tally.</h2>
+<pre>expectMinimumCallCount($method, integer $count, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method      Method call to test.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expectMinimumCallCount()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>integer</code><p>Least number of times it should have been called. @param string $message Overridden message.</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_expectNever"></a><div class="element clickable method public method_expectNever" data-toggle="collapse" data-target=".method_expectNever .collapse">
+<h2>Convenience method for barring a method
+   call.</h2>
+<pre>expectNever($method, string $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method        Method call to ban.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expectNever()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Overridden message.</p></div>
+</div></div>
+</div>
+<a id="method_expectOnce"></a><div class="element clickable method public method_expectOnce" data-toggle="collapse" data-target=".method_expectOnce .collapse">
+<h2>Convenience method for a single method
+   call.</h2>
+<pre>expectOnce($method, array $args, $message) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method     Method call to track.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::expectOnce()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>Expected argument list or false for any arguments. @param string $message Overridden message.</p>
+</div>
+<div class="subelement argument"><h4>$message</h4></div>
+</div></div>
+</div>
+<a id="method_getCallCount"></a><div class="element clickable method public method_getCallCount" data-toggle="collapse" data-target=".method_getCallCount .collapse">
+<h2>Fetches the call count of a method so far.</h2>
+<pre>getCallCount($method) : integer</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method        Method name called.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::getCallCount()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Number of calls so far.</div>
+</div></div>
+</div>
+<a id="method_invoke"></a><div class="element clickable method public method_invoke" data-toggle="collapse" data-target=".method_invoke .collapse">
+<h2>Returns the expected value for the method name
+   and checks expectations.</h2>
+<pre>invoke(string $method, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will generate any
+   test assertions as a result of expectations
+   if there is a test present.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::invoke()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Name of method to simulate. @param array $args Arguments as an array. @return mixed Stored return.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_replaceWildcards"></a><div class="element clickable method public method_replaceWildcards" data-toggle="collapse" data-target=".method_replaceWildcards .collapse">
+<h2>Replaces wildcard matches with wildcard
+   expectations in the argument list.</h2>
+<pre>replaceWildcards($args) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $args      Raw argument list.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::replaceWildcards()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$args</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>Argument list with
+                           expectations.</div>
+</div></div>
+</div>
+<a id="method_returns"></a><div class="element clickable method public method_returns" data-toggle="collapse" data-target=".method_returns .collapse">
+<h2>Sets a return for a parameter list that will
+   be passed on by all calls to this method that match.</h2>
+<pre>returns($method, mixed $value, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method       Method name.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::returns()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Result of call by value/handle. @param array $args List of parameters to match including wildcards.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_returnsAt"></a><div class="element clickable method public method_returnsAt" data-toggle="collapse" data-target=".method_returnsAt .collapse">
+<h2>Sets a return for a parameter list that will
+   be passed only when the required call count
+   is reached.</h2>
+<pre>returnsAt($timing, string $method, $value, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $timing   Number of calls in the future
+                            to which the result applies. If
+                            not set then all calls will return
+                            the value.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::returnsAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$timing</h4></div>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method name. @param mixed $value Result of call passed. @param array $args List of parameters to match including wildcards.</p>
+</div>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_returnsByReference"></a><div class="element clickable method public method_returnsByReference" data-toggle="collapse" data-target=".method_returnsByReference .collapse">
+<h2>Sets a return for a parameter list that will
+   be passed by reference for all calls.</h2>
+<pre>returnsByReference($method, mixed $reference, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method       Method name.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::returnsByReference()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$reference</h4>
+<code>mixed</code><p>Result of the call will be this object. @param array $args List of parameters to match including wildcards.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_returnsByReferenceAt"></a><div class="element clickable method public method_returnsByReferenceAt" data-toggle="collapse" data-target=".method_returnsByReferenceAt .collapse">
+<h2>Sets a return for a parameter list that will
+   be passed by value only when the required call count
+   is reached.</h2>
+<pre>returnsByReferenceAt($timing, string $method, $reference, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $timing    Number of calls in the future
+                             to which the result applies. If
+                             not set then all calls will return
+                             the value.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::returnsByReferenceAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$timing</h4></div>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method name. @param mixed $reference Result of the call will be this object. @param array $args List of parameters to match including wildcards.</p>
+</div>
+<div class="subelement argument"><h4>$reference</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_returnsByValue"></a><div class="element clickable method public method_returnsByValue" data-toggle="collapse" data-target=".method_returnsByValue .collapse">
+<h2>Sets a return for a parameter list that will
+   be passed by value for all calls to this method.</h2>
+<pre>returnsByValue($method, mixed $value, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method       Method name.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::returnsByValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Result of call passed by value. @param array $args List of parameters to match including wildcards.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_returnsByValueAt"></a><div class="element clickable method public method_returnsByValueAt" data-toggle="collapse" data-target=".method_returnsByValueAt .collapse">
+<h2>Sets a return for a parameter list that will
+   be passed by value only when the required call count
+   is reached.</h2>
+<pre>returnsByValueAt($timing, string $method, $value, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $timing   Number of calls in the future
+                            to which the result applies. If
+                            not set then all calls will return
+                            the value.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::returnsByValueAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$timing</h4></div>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method name. @param mixed $value Result of call passed by value. @param array $args List of parameters to match including wildcards.</p>
+</div>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_setReturnReference"></a><div class="element clickable method public method_setReturnReference" data-toggle="collapse" data-target=".method_setReturnReference .collapse">
+<h2>setReturnReference()
+        </h2>
+<pre>setReturnReference($method, $reference, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::setReturnReference()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument"><h4>$reference</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_setReturnReferenceAt"></a><div class="element clickable method public method_setReturnReferenceAt" data-toggle="collapse" data-target=".method_setReturnReferenceAt .collapse">
+<h2>setReturnReferenceAt()
+        </h2>
+<pre>setReturnReferenceAt($timing, $method, $reference, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::setReturnReferenceAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$timing</h4></div>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument"><h4>$reference</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_setReturnValue"></a><div class="element clickable method public method_setReturnValue" data-toggle="collapse" data-target=".method_setReturnValue .collapse">
+<h2>setReturnValue()
+        </h2>
+<pre>setReturnValue($method, $value, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::setReturnValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_setReturnValueAt"></a><div class="element clickable method public method_setReturnValueAt" data-toggle="collapse" data-target=".method_setReturnValueAt .collapse">
+<h2>setReturnValueAt()
+        </h2>
+<pre>setReturnValueAt($timing, $method, $value, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::setReturnValueAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$timing</h4></div>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_throwAt"></a><div class="element clickable method public method_throwAt" data-toggle="collapse" data-target=".method_throwAt .collapse">
+<h2>Sets up a trigger to throw an exception upon the
+   method call.</h2>
+<pre>throwAt($timing, string $method, $exception, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $timing    When to throw the exception. A
+                             value of 0 throws immediately.
+                             A value of 1 actually allows one call
+                             to this method before throwing. 2
+                             will allow two calls before throwing
+                             and so on.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::throwAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$timing</h4></div>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method name to throw on. @param object $exception Exception object to throw. If not given then a simple Exception object is thrown. @param array $args Optional argument list filter. If given then the exception will only be thrown if the method call matches the arguments.</p>
+</div>
+<div class="subelement argument"><h4>$exception</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_throwOn"></a><div class="element clickable method public method_throwOn" data-toggle="collapse" data-target=".method_throwOn .collapse">
+<h2>Sets up a trigger to throw an exception upon the
+   method call.</h2>
+<pre>throwOn($method, object $exception, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method     Method name to throw on.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::throwOn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$exception</h4>
+<code>object</code><p>Exception object to throw. If not given then a simple Exception object is thrown. @param array $args Optional argument list filter. If given then the exception will only be thrown if the method call matches the arguments.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_addCall"></a><div class="element clickable method protected method_addCall" data-toggle="collapse" data-target=".method_addCall .collapse">
+<h2>Adds one to the call count of a method.</h2>
+<pre>addCall($method, array $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method        Method called.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::addCall()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>Arguments as an array.</p></div>
+</div></div>
+</div>
+<a id="method_checkArgumentsIsArray"></a><div class="element clickable method protected method_checkArgumentsIsArray" data-toggle="collapse" data-target=".method_checkArgumentsIsArray .collapse">
+<h2>Die if bad arguments array is passed.</h2>
+<pre>checkArgumentsIsArray($args, string $task) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param mixed $args     The arguments value to be checked.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::checkArgumentsIsArray()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$args</h4></div>
+<div class="subelement argument">
+<h4>$task</h4>
+<code>string</code><p>Description of task attempt. @return boolean Valid arguments</p>
+</div>
+</div></div>
+</div>
+<a id="method_checkExpectations"></a><div class="element clickable method protected method_checkExpectations" data-toggle="collapse" data-target=".method_checkExpectations .collapse">
+<h2>Tests the arguments against expectations.</h2>
+<pre>checkExpectations($method, array $args, $timing) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method        Method to check.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::checkExpectations()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>Argument list to match. @param integer $timing The position of this call in the call history.</p>
+</div>
+<div class="subelement argument"><h4>$timing</h4></div>
+</div></div>
+</div>
+<a id="method_dieOnNoMethod"></a><div class="element clickable method protected method_dieOnNoMethod" data-toggle="collapse" data-target=".method_dieOnNoMethod .collapse">
+<h2>Triggers a PHP error if the method is not part
+   of this object.</h2>
+<pre>dieOnNoMethod($method, string $task) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method        Name of method.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::dieOnNoMethod()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<div class="subelement argument">
+<h4>$task</h4>
+<code>string</code><p>Description of task attempt.</p></div>
+</div></div>
+</div>
+<a id="method_emulateCall"></a><div class="element clickable method protected method_emulateCall" data-toggle="collapse" data-target=".method_emulateCall .collapse">
+<h2>Finds the return value matching the incoming
+   arguments.</h2>
+<pre>emulateCall(string $method, $args, $step) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If there is no matching value found
+   then an error is triggered.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::emulateCall()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Method name. @param array $args Calling arguments. @param integer $step Current position in the call history. @return mixed Stored return or other action.</p>
+</div>
+<div class="subelement argument"><h4>$args</h4></div>
+<div class="subelement argument"><h4>$step</h4></div>
+</div></div>
+</div>
+<a id="method_getCurrentTestCase"></a><div class="element clickable method protected method_getCurrentTestCase" data-toggle="collapse" data-target=".method_getCurrentTestCase .collapse">
+<h2>Finds currently running test.</h2>
+<pre>getCurrentTestCase() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>@return SimpeTestCase    Current test case.</p></div></div></div>
+</div>
+<a id="method_disableEStrict"></a><div class="element clickable method private method_disableEStrict" data-toggle="collapse" data-target=".method_disableEStrict .collapse">
+<h2>Our mock has to be able to return anything, including
+  variable references.</h2>
+<pre>disableEStrict() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To allow for these mixed returns
+  we have to disable the E_STRICT warnings while the
+  method calls are emulated.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::disableEStrict()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_restoreEStrict"></a><div class="element clickable method private method_restoreEStrict" data-toggle="collapse" data-target=".method_restoreEStrict .collapse">
+<h2>Restores the E_STRICT level if it was previously set.</h2>
+<pre>restoreEStrict($was) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param integer $was     Previous error reporting level.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::restoreEStrict()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$was</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_actions"> </a><div class="element clickable property private property_actions" data-toggle="collapse" data-target=".property_actions .collapse">
+<h2></h2>
+<pre>$actions </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$actions</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_call_counts"> </a><div class="element clickable property private property_call_counts" data-toggle="collapse" data-target=".property_call_counts .collapse">
+<h2></h2>
+<pre>$call_counts </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$call_counts</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_expectations"> </a><div class="element clickable property private property_expectations" data-toggle="collapse" data-target=".property_expectations .collapse">
+<h2></h2>
+<pre>$expectations </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$expectations</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_expected_args"> </a><div class="element clickable property private property_expected_args" data-toggle="collapse" data-target=".property_expected_args .collapse">
+<h2></h2>
+<pre>$expected_args </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$expected_args</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_expected_args_at"> </a><div class="element clickable property private property_expected_args_at" data-toggle="collapse" data-target=".property_expected_args_at .collapse">
+<h2></h2>
+<pre>$expected_args_at </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$expected_args_at</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_expected_counts"> </a><div class="element clickable property private property_expected_counts" data-toggle="collapse" data-target=".property_expected_counts .collapse">
+<h2></h2>
+<pre>$expected_counts </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$expected_counts</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_is_strict"> </a><div class="element clickable property private property_is_strict" data-toggle="collapse" data-target=".property_is_strict .collapse">
+<h2></h2>
+<pre>$is_strict </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$is_strict</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_max_counts"> </a><div class="element clickable property private property_max_counts" data-toggle="collapse" data-target=".property_max_counts .collapse">
+<h2></h2>
+<pre>$max_counts </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$max_counts</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_wildcard"> </a><div class="element clickable property private property_wildcard" data-toggle="collapse" data-target=".property_wildcard .collapse">
+<h2></h2>
+<pre>$wildcard </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\SimpleMock::$$wildcard</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:44+01:00.<br></footer></div>
+</div>
+</body>
+</html>

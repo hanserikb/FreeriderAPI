@@ -1,0 +1,765 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \SimpleReflection</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/PlaceLocalInclude.html"><i class="icon-folder-open"></i> PlaceLocalInclude</a></li>
+<li><a href="../packages/SimpleTest.html"><i class="icon-folder-open"></i> SimpleTest</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+     @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20%20%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage   UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20MockObjects.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage MockObjects</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20UnitTester%0A%20%20%20@abstract.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage UnitTester
+   @abstract</a></li>
+<li><a href="../packages/SimpleTest%0A%20%20%20@subpackage%20WebTester.html"><i class="icon-folder-open"></i> SimpleTest
+   @subpackage WebTester</a></li>
+<li><a href="../packages/SimpleTest%0A%20@subpackage%20Eclipse.html"><i class="icon-folder-open"></i> SimpleTest
+ @subpackage Eclipse</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3193</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">7</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_SimpleReflection" title="SimpleReflection :: Stashes the class/interface."><span class="description">Stashes the class/interface.</span><pre>SimpleReflection()</pre></a></li>
+<li class="method public "><a href="#method_classExists" title="classExists :: Checks that a class has been declared."><span class="description">Checks that a class has been declared.</span><pre>classExists()</pre></a></li>
+<li class="method public "><a href="#method_classExistsSansAutoload" title="classExistsSansAutoload :: Needed to kill the autoload feature in PHP5
+   for classes created dynamically."><span class="description">Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</span><pre>classExistsSansAutoload()</pre></a></li>
+<li class="method public "><a href="#method_classOrInterfaceExists" title="classOrInterfaceExists :: Checks that a class or interface has been
+   declared."><span class="description">Checks that a class or interface has been
+   declared.</span><pre>classOrInterfaceExists()</pre></a></li>
+<li class="method public "><a href="#method_classOrInterfaceExistsSansAutoload" title="classOrInterfaceExistsSansAutoload :: Needed to kill the autoload feature in PHP5
+   for classes created dynamically."><span class="description">Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</span><pre>classOrInterfaceExistsSansAutoload()</pre></a></li>
+<li class="method public "><a href="#method_getInterfaces" title="getInterfaces :: Gets the list of interfaces from a class."><span class="description">Gets the list of interfaces from a class.</span><pre>getInterfaces()</pre></a></li>
+<li class="method public "><a href="#method_getMethods" title="getMethods :: Gets the list of methods on a class or
+   interface."><span class="description">Gets the list of methods on a class or
+   interface.</span><pre>getMethods()</pre></a></li>
+<li class="method public "><a href="#method_getParent" title="getParent :: Finds the parent class name."><span class="description">Finds the parent class name.</span><pre>getParent()</pre></a></li>
+<li class="method public "><a href="#method_getSignature" title="getSignature :: Gets the source code matching the declaration
+   of a method."><span class="description">Gets the source code matching the declaration
+   of a method.</span><pre>getSignature()</pre></a></li>
+<li class="method public "><a href="#method_hasFinal" title="hasFinal :: Scans for final methods, but as it's PHP 4 there
+   aren't any."><span class="description">Scans for final methods, but as it's PHP 4 there
+   aren't any.</span><pre>hasFinal()</pre></a></li>
+<li class="method public "><a href="#method_isAbstract" title="isAbstract :: Determines if the class is abstract, which for PHP 4
+   will never be the case."><span class="description">Determines if the class is abstract, which for PHP 4
+   will never be the case.</span><pre>isAbstract()</pre></a></li>
+<li class="method public "><a href="#method_isInterface" title="isInterface :: Determines if the the entity is an interface, which for PHP 4
+   will never be the case."><span class="description">Determines if the the entity is an interface, which for PHP 4
+   will never be the case.</span><pre>isInterface()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public "><a href="#property__interface" title="$_interface :: "><span class="description"></span><pre>$_interface</pre></a></li></ul>
+</li>
+</ul>
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Stashes the class/interface."><span class="description">Stashes the class/interface.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_classExists" title="classExists :: Checks that a class has been declared."><span class="description">Checks that a class has been declared.</span><pre>classExists()</pre></a></li>
+<li class="method public "><a href="#method_classExistsSansAutoload" title="classExistsSansAutoload :: Needed to kill the autoload feature in PHP5
+   for classes created dynamically."><span class="description">Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</span><pre>classExistsSansAutoload()</pre></a></li>
+<li class="method public "><a href="#method_classOrInterfaceExists" title="classOrInterfaceExists :: Checks that a class or interface has been
+   declared."><span class="description">Checks that a class or interface has been
+   declared.</span><pre>classOrInterfaceExists()</pre></a></li>
+<li class="method public "><a href="#method_classOrInterfaceExistsSansAutoload" title="classOrInterfaceExistsSansAutoload :: Needed to kill the autoload feature in PHP5
+   for classes created dynamically."><span class="description">Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</span><pre>classOrInterfaceExistsSansAutoload()</pre></a></li>
+<li class="method public "><a href="#method_getInterfaceMethods" title="getInterfaceMethods :: Gets the list of methods for the implemented
+   interfaces only."><span class="description">Gets the list of methods for the implemented
+   interfaces only.</span><pre>getInterfaceMethods()</pre></a></li>
+<li class="method public "><a href="#method_getInterfaces" title="getInterfaces :: Gets the list of interfaces from a class."><span class="description">Gets the list of interfaces from a class.</span><pre>getInterfaces()</pre></a></li>
+<li class="method public "><a href="#method_getMethods" title="getMethods :: Gets the list of methods on a class or
+   interface."><span class="description">Gets the list of methods on a class or
+   interface.</span><pre>getMethods()</pre></a></li>
+<li class="method public "><a href="#method_getParent" title="getParent :: Finds the parent class name."><span class="description">Finds the parent class name.</span><pre>getParent()</pre></a></li>
+<li class="method public "><a href="#method_getSignature" title="getSignature :: Writes the source code matching the declaration
+   of a method."><span class="description">Writes the source code matching the declaration
+   of a method.</span><pre>getSignature()</pre></a></li>
+<li class="method public "><a href="#method_hasFinal" title="hasFinal :: Scans for final methods, as they screw up inherited
+   mocks by not allowing you to override them."><span class="description">Scans for final methods, as they screw up inherited
+   mocks by not allowing you to override them.</span><pre>hasFinal()</pre></a></li>
+<li class="method public "><a href="#method_isAbstract" title="isAbstract :: Trivially determines if the class is abstract."><span class="description">Trivially determines if the class is abstract.</span><pre>isAbstract()</pre></a></li>
+<li class="method public "><a href="#method_isInterface" title="isInterface :: Trivially determines if the class is an interface."><span class="description">Trivially determines if the class is an interface.</span><pre>isInterface()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_classOrInterfaceExistsWithAutoload" title="classOrInterfaceExistsWithAutoload :: Needed to select the autoload feature in PHP5
+   for classes created dynamically."><span class="description">Needed to select the autoload feature in PHP5
+   for classes created dynamically.</span><pre>classOrInterfaceExistsWithAutoload()</pre></a></li>
+<li class="method protected "><a href="#method_getFullSignature" title="getFullSignature :: For a signature specified in an interface, full
+   details must be replicated to be a valid implementation."><span class="description">For a signature specified in an interface, full
+   details must be replicated to be a valid implementation.</span><pre>getFullSignature()</pre></a></li>
+<li class="method protected "><a href="#method_getParameterSignatures" title="getParameterSignatures :: Gets the source code for each parameter."><span class="description">Gets the source code for each parameter.</span><pre>getParameterSignatures()</pre></a></li>
+<li class="method protected "><a href="#method_isAbstractMethod" title="isAbstractMethod :: Checks whether a method is abstract or not."><span class="description">Checks whether a method is abstract or not.</span><pre>isAbstractMethod()</pre></a></li>
+<li class="method protected "><a href="#method_isAbstractMethodInParents" title="isAbstractMethodInParents :: Checks whether a method is abstract in all parents or not."><span class="description">Checks whether a method is abstract in all parents or not.</span><pre>isAbstractMethodInParents()</pre></a></li>
+<li class="method protected "><a href="#method_isConstructor" title="isConstructor :: Checks whether a method is the constructor."><span class="description">Checks whether a method is the constructor.</span><pre>isConstructor()</pre></a></li>
+<li class="method protected "><a href="#method_isInterfaceMethod" title="isInterfaceMethod :: Checks to see if the method signature has to be tightly
+   specified."><span class="description">Checks to see if the method signature has to be tightly
+   specified.</span><pre>isInterfaceMethod()</pre></a></li>
+<li class="method protected "><a href="#method_isOptional" title="isOptional :: Test of a reflection parameter being optional
+   that works with early versions of PHP5."><span class="description">Test of a reflection parameter being optional
+   that works with early versions of PHP5.</span><pre>isOptional()</pre></a></li>
+<li class="method protected "><a href="#method_isStaticMethod" title="isStaticMethod :: Checks whether a method is static or not."><span class="description">Checks whether a method is static or not.</span><pre>isStaticMethod()</pre></a></li>
+<li class="method protected "><a href="#method_onlyParents" title="onlyParents :: Whittles a list of interfaces down to only the
+   necessary top level parents."><span class="description">Whittles a list of interfaces down to only the
+   necessary top level parents.</span><pre>onlyParents()</pre></a></li>
+<li class="method protected "><a href="#method_suppressSpurious" title="suppressSpurious :: The SPL library has problems with the
+   Reflection library."><span class="description">The SPL library has problems with the
+   Reflection library.</span><pre>suppressSpurious()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_interface" title="$interface :: "><span class="description"></span><pre>$interface</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\SimpleReflection"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/SimpleReflection.html">SimpleReflection</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Version specific reflection API.</p>
+<div class="details">
+<div class="long_description"><p>@package SimpleTest</p></div>
+<table class="table table-bordered"><tr>
+<th>subpackage</th>
+<td>UnitTester
+ @ignore duplicate with reflection_php5.php</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_SimpleReflection"></a><div class="element clickable method public method_SimpleReflection" data-toggle="collapse" data-target=".method_SimpleReflection .collapse">
+<h2>Stashes the class/interface.</h2>
+<pre>SimpleReflection($interface) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $interface    Class or interface
+                               to inspect.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$interface</h4></div>
+</div></div>
+</div>
+<a id="method_classExists"></a><div class="element clickable method public method_classExists" data-toggle="collapse" data-target=".method_classExists .collapse">
+<h2>Checks that a class has been declared.</h2>
+<pre>classExists() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean        True if defined.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_classExistsSansAutoload"></a><div class="element clickable method public method_classExistsSansAutoload" data-toggle="collapse" data-target=".method_classExistsSansAutoload .collapse">
+<h2>Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</h2>
+<pre>classExistsSansAutoload() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean        True if defined.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_classOrInterfaceExists"></a><div class="element clickable method public method_classOrInterfaceExists" data-toggle="collapse" data-target=".method_classOrInterfaceExists .collapse">
+<h2>Checks that a class or interface has been
+   declared.</h2>
+<pre>classOrInterfaceExists() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean        True if defined.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_classOrInterfaceExistsSansAutoload"></a><div class="element clickable method public method_classOrInterfaceExistsSansAutoload" data-toggle="collapse" data-target=".method_classOrInterfaceExistsSansAutoload .collapse">
+<h2>Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</h2>
+<pre>classOrInterfaceExistsSansAutoload() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean        True if defined.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getInterfaces"></a><div class="element clickable method public method_getInterfaces" data-toggle="collapse" data-target=".method_getInterfaces .collapse">
+<h2>Gets the list of interfaces from a class.</h2>
+<pre>getInterfaces() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If the
+   class name is actually an interface then just that
+   interface is returned.</p></div>
+<table class="table table-bordered"><tr>
+<th>returns</th>
+<td>array          List of interfaces.
+   @access public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getMethods"></a><div class="element clickable method public method_getMethods" data-toggle="collapse" data-target=".method_getMethods .collapse">
+<h2>Gets the list of methods on a class or
+   interface.</h2>
+<pre>getMethods() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns array          List of method names.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getParent"></a><div class="element clickable method public method_getParent" data-toggle="collapse" data-target=".method_getParent .collapse">
+<h2>Finds the parent class name.</h2>
+<pre>getParent() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns string      Parent class name.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getSignature"></a><div class="element clickable method public method_getSignature" data-toggle="collapse" data-target=".method_getSignature .collapse">
+<h2>Gets the source code matching the declaration
+   of a method.</h2>
+<pre>getSignature($method) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method       Method name.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+</div></div>
+</div>
+<a id="method_hasFinal"></a><div class="element clickable method public method_hasFinal" data-toggle="collapse" data-target=".method_hasFinal .collapse">
+<h2>Scans for final methods, but as it's PHP 4 there
+   aren't any.</h2>
+<pre>hasFinal() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns boolean   True if the class has a final method.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isAbstract"></a><div class="element clickable method public method_isAbstract" data-toggle="collapse" data-target=".method_isAbstract .collapse">
+<h2>Determines if the class is abstract, which for PHP 4
+   will never be the case.</h2>
+<pre>isAbstract() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns boolean      True if abstract.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isInterface"></a><div class="element clickable method public method_isInterface" data-toggle="collapse" data-target=".method_isInterface .collapse">
+<h2>Determines if the the entity is an interface, which for PHP 4
+   will never be the case.</h2>
+<pre>isInterface() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns boolean      True if interface.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__interface"> </a><div class="element clickable property public property__interface" data-toggle="collapse" data-target=".property__interface .collapse">
+<h2></h2>
+<pre>$_interface </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+<a id="\SimpleReflection"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/SimpleReflection.html">SimpleReflection</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Version specific reflection API.</p>
+<div class="details">
+<div class="long_description"><p>@package SimpleTest</p></div>
+<table class="table table-bordered"><tr>
+<th>subpackage</th>
+<td>UnitTester</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Stashes the class/interface.</h2>
+<pre>__construct($interface) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $interface    Class or interface
+                               to inspect.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$interface</h4></div>
+</div></div>
+</div>
+<a id="method_classExists"></a><div class="element clickable method public method_classExists" data-toggle="collapse" data-target=".method_classExists .collapse">
+<h2>Checks that a class has been declared.</h2>
+<pre>classExists() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Versions
+   before PHP5.0.2 need a check that it's not really
+   an interface.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if defined.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_classExistsSansAutoload"></a><div class="element clickable method public method_classExistsSansAutoload" data-toggle="collapse" data-target=".method_classExistsSansAutoload .collapse">
+<h2>Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</h2>
+<pre>classExistsSansAutoload() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean        True if defined.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_classOrInterfaceExists"></a><div class="element clickable method public method_classOrInterfaceExists" data-toggle="collapse" data-target=".method_classOrInterfaceExists .collapse">
+<h2>Checks that a class or interface has been
+   declared.</h2>
+<pre>classOrInterfaceExists() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean            True if defined.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_classOrInterfaceExistsSansAutoload"></a><div class="element clickable method public method_classOrInterfaceExistsSansAutoload" data-toggle="collapse" data-target=".method_classOrInterfaceExistsSansAutoload .collapse">
+<h2>Needed to kill the autoload feature in PHP5
+   for classes created dynamically.</h2>
+<pre>classOrInterfaceExistsSansAutoload() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@return boolean        True if defined.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getInterfaceMethods"></a><div class="element clickable method public method_getInterfaceMethods" data-toggle="collapse" data-target=".method_getInterfaceMethods .collapse">
+<h2>Gets the list of methods for the implemented
+   interfaces only.</h2>
+<pre>getInterfaceMethods() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns array      List of enforced method signatures.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getInterfaces"></a><div class="element clickable method public method_getInterfaces" data-toggle="collapse" data-target=".method_getInterfaces .collapse">
+<h2>Gets the list of interfaces from a class.</h2>
+<pre>getInterfaces() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If the
+   class name is actually an interface then just that
+   interface is returned.</p></div>
+<table class="table table-bordered"><tr>
+<th>returns</th>
+<td>array          List of interfaces.
+   @access public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getMethods"></a><div class="element clickable method public method_getMethods" data-toggle="collapse" data-target=".method_getMethods .collapse">
+<h2>Gets the list of methods on a class or
+   interface.</h2>
+<pre>getMethods() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns array              List of method names.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getParent"></a><div class="element clickable method public method_getParent" data-toggle="collapse" data-target=".method_getParent .collapse">
+<h2>Finds the parent class name.</h2>
+<pre>getParent() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns string      Parent class name.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getSignature"></a><div class="element clickable method public method_getSignature" data-toggle="collapse" data-target=".method_getSignature .collapse">
+<h2>Writes the source code matching the declaration
+   of a method.</h2>
+<pre>getSignature($name) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $name    Method name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Method signature up to last
+                          bracket.
+   @access public</div>
+</div></div>
+</div>
+<a id="method_hasFinal"></a><div class="element clickable method public method_hasFinal" data-toggle="collapse" data-target=".method_hasFinal .collapse">
+<h2>Scans for final methods, as they screw up inherited
+   mocks by not allowing you to override them.</h2>
+<pre>hasFinal() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns boolean   True if the class has a final method.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isAbstract"></a><div class="element clickable method public method_isAbstract" data-toggle="collapse" data-target=".method_isAbstract .collapse">
+<h2>Trivially determines if the class is abstract.</h2>
+<pre>isAbstract() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns boolean      True if abstract.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isInterface"></a><div class="element clickable method public method_isInterface" data-toggle="collapse" data-target=".method_isInterface .collapse">
+<h2>Trivially determines if the class is an interface.</h2>
+<pre>isInterface() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@returns boolean      True if interface.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_classOrInterfaceExistsWithAutoload"></a><div class="element clickable method protected method_classOrInterfaceExistsWithAutoload" data-toggle="collapse" data-target=".method_classOrInterfaceExistsWithAutoload .collapse">
+<h2>Needed to select the autoload feature in PHP5
+   for classes created dynamically.</h2>
+<pre>classOrInterfaceExistsWithAutoload($interface, boolean $autoload) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $interface       Class or interface name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$interface</h4></div>
+<div class="subelement argument">
+<h4>$autoload</h4>
+<code>boolean</code><p>True totriggerautoload. @return boolean True if interface defined. @access private</p>
+</div>
+</div></div>
+</div>
+<a id="method_getFullSignature"></a><div class="element clickable method protected method_getFullSignature" data-toggle="collapse" data-target=".method_getFullSignature .collapse">
+<h2>For a signature specified in an interface, full
+   details must be replicated to be a valid implementation.</h2>
+<pre>getFullSignature($name) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $name    Method name.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Method signature up to last
+                          bracket.
+   @access private</div>
+</div></div>
+</div>
+<a id="method_getParameterSignatures"></a><div class="element clickable method protected method_getParameterSignatures" data-toggle="collapse" data-target=".method_getParameterSignatures .collapse">
+<h2>Gets the source code for each parameter.</h2>
+<pre>getParameterSignatures($method) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param ReflectionMethod $method   Method object from
+                                     reflection API</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>List of strings, each
+                                     a snippet of code.
+   @access private</div>
+</div></div>
+</div>
+<a id="method_isAbstractMethod"></a><div class="element clickable method protected method_isAbstractMethod" data-toggle="collapse" data-target=".method_isAbstractMethod .collapse">
+<h2>Checks whether a method is abstract or not.</h2>
+<pre>isAbstractMethod(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Method name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true if method is abstract, else false</div>
+</div></div>
+</div>
+<a id="method_isAbstractMethodInParents"></a><div class="element clickable method protected method_isAbstractMethodInParents" data-toggle="collapse" data-target=".method_isAbstractMethodInParents .collapse">
+<h2>Checks whether a method is abstract in all parents or not.</h2>
+<pre>isAbstractMethodInParents(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Method name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true if method is abstract in parent, else false</div>
+</div></div>
+</div>
+<a id="method_isConstructor"></a><div class="element clickable method protected method_isConstructor" data-toggle="collapse" data-target=".method_isConstructor .collapse">
+<h2>Checks whether a method is the constructor.</h2>
+<pre>isConstructor(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Method name.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true if method is the constructor</div>
+</div></div>
+</div>
+<a id="method_isInterfaceMethod"></a><div class="element clickable method protected method_isInterfaceMethod" data-toggle="collapse" data-target=".method_isInterfaceMethod .collapse">
+<h2>Checks to see if the method signature has to be tightly
+   specified.</h2>
+<pre>isInterfaceMethod($method) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param string $method        Method name.</p></div>
+<table class="table table-bordered"><tr>
+<th>returns</th>
+<td>boolean             True if enforced.
+   @access private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$method</h4></div>
+</div></div>
+</div>
+<a id="method_isOptional"></a><div class="element clickable method protected method_isOptional" data-toggle="collapse" data-target=".method_isOptional .collapse">
+<h2>Test of a reflection parameter being optional
+   that works with early versions of PHP5.</h2>
+<pre>isOptional($parameter) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param reflectionParameter $parameter    Is this optional.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parameter</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if optional.
+   @access private</div>
+</div></div>
+</div>
+<a id="method_isStaticMethod"></a><div class="element clickable method protected method_isStaticMethod" data-toggle="collapse" data-target=".method_isStaticMethod .collapse">
+<h2>Checks whether a method is static or not.</h2>
+<pre>isStaticMethod(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Method name</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true if method is static, else false</div>
+</div></div>
+</div>
+<a id="method_onlyParents"></a><div class="element clickable method protected method_onlyParents" data-toggle="collapse" data-target=".method_onlyParents .collapse">
+<h2>Whittles a list of interfaces down to only the
+   necessary top level parents.</h2>
+<pre>onlyParents($interfaces) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>@param array $interfaces     Reflection API interfaces
+                                to reduce.</p></div>
+<table class="table table-bordered"><tr>
+<th>returns</th>
+<td>array               List of parent interface names.
+   @access private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$interfaces</h4></div>
+</div></div>
+</div>
+<a id="method_suppressSpurious"></a><div class="element clickable method protected method_suppressSpurious" data-toggle="collapse" data-target=".method_suppressSpurious .collapse">
+<h2>The SPL library has problems with the
+   Reflection library.</h2>
+<pre>suppressSpurious(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In particular, you can
+   get extra characters in parameter names :(.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Parameter name. @return string Cleaner name. @access private</p>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_interface"> </a><div class="element clickable property private property_interface" data-toggle="collapse" data-target=".property_interface .collapse">
+<h2></h2>
+<pre>$interface </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a11</a> and<br>
+            generated on 2012-11-19T18:24:12+01:00.<br></footer></div>
+</div>
+</body>
+</html>
