@@ -1,23 +1,25 @@
 <?php
 
-require_once("../../simpletest/autorun.php");
+require_once("simpletest/autorun.php");
 require_once("../Freerider.php");
 class FreeriderAPITEsts extends UnitTestCase
 {
-
+    // Kontrollerar om klassen Freeriders konstruktor fungerar som den ska
     function testFreeriderObject()
     {
-        $freerider = new Freerider("Stockholm", "Västerås", date("Y-m-d", strtotime("2012-11-18")), date("Y-m-d", strtotime("2012-11-20")), "Volvo V40");
-        $this->assertTrue(1 == 1);
+        $freerider = new Freerider("Västerås","Stockholm", date("Y-m-d", strtotime("2012-11-18")), date("Y-m-d", strtotime("2012-11-20")), "Volvo V40");
+        $this->assertIsA($freerider, "Freerider", "Object should be type Freerider");
+        $this->assertEqual($freerider->carModel == "Volvo V40", "Car model not valid, it is %s");
+        $this->assertEqual($freerider->origin == "Stockholm", "Origin is not Stockholm");
+        $this->assertEqual($freerider->destination == "Västerås", "Destination not Västerås");
+        $this->assertIsA($freerider->startDate == "string", "Start Date not a date object");
+        $this->assertIsA($freerider->endDate, "string", "");
     }
-
 
     function testGetAll()
     {
         // Gör ett anrop
         // En array med minst ett objekt
-        $result = null;
-      //  $this->assertTrue(count($result) > 1, "Keyword search failed, no results");
     }
 
     function testGetDestination()
