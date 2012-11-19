@@ -1,15 +1,23 @@
 # Freerider API
 
-Med detta inofficiella API kan man hämta tillgängliga bilar hos Hertz Freerider.
+Detta inofficiella Hertz Freerider PHP API erbjuder möjligheten att hämta information om lediga hyrbilar.
+För tillfället går det ej att boka bilar, något som är planerat att implementeras vid ett senare tillfälle.
 
-## Hertz Freerider
+## Vad är Hertz Freerider?
 Hertz Freerider är en tjänst som erbjuder gratis one-way-transfers från olika Hertz-stationer i Sverige.
 
 ## Funktionalitet
-APIet möjliggör att hämta samtliga resor samt söka på destination och startpunkt.
+För att hämta aktuella hyrbilar tillhandahåller APIet tre metoder med följande funktionalitet
+- Hämta **samtliga** bilar
+- Hämta bilar som ska köras **ifrån** en viss station
+- Hämta bilar som ska köras **till** en viss station
 
 ## Installation
-APIet installeras genom att inkludera filen FreeriderAPI.php. För att använda APIet instantieras klassen FreeriderAPI som tillhandahåller tre metoder för att söka resor.
+APIet installeras genom att ladda ned samtliga filer och sedan inkludera filen FreeriderAPI.php i sitt projekt.
+```php
+include_once("FreeriderAPI.php");
+...
+```
 
 ## Metoder
 ### GetAll
@@ -31,7 +39,8 @@ foreach ($result as $freeride) {
 ```
 
 ### GetDestinations
-#### Parametrar: $destination - Sökord på destination
+#### Parametrar
+- string $destination - Sökord på destination
 Hämtar alla resor med angiven destination
 
 #### Användning
@@ -50,7 +59,8 @@ foreach ($result as $freeride) {
 ```
 
 ### GetOrigins
-#### Parametrar: $destination - Sökord på avfärdspunkt
+#### Parametrar 
+- $origin - Sökord på avfärdspunkt
 Hämtar alla resor med angiven avfärdspunkt
 
 #### Användning
@@ -68,7 +78,6 @@ foreach ($result as $freeride) {
 }
 ```
 
-
 ### Returnerad data
 Samtliga metoder returnerar en array innehållandes objekt av typen Freerider.
 Hittas inga resultat i sökningen resulteras en tom array
@@ -81,21 +90,12 @@ Freerider-objekten innehåller följande egenskaper
 - endDate - Datum för senast bokning
 - carModel - Information om hyrbilen
 
-## Användning
-```php
-$freeriderapi = new freeriderAPI();
+## Om APIet
+### Tekniker
+Skrapningen av Hertz Freerider's webbplats sker med hjälp av hjälpbiblioteket [Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/).
 
-$routes = $freeriderapi->getAll();
-
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
-}
-```
-
+### Jag
+APIet är skapat av mig, Hans Bentlöv, i studiesyfte under kursen Webbutveckling med PHP II på Linnéuniversitetet i Kalmar.
 
 
 
