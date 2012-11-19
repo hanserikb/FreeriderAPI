@@ -25,16 +25,16 @@ Hämtar samtliga resor
 
 #### Användning
 ```php
-$freeriderapi = new freeriderAPI();
+$freerider_api = new freeriderAPI();
 
-$routes = $freeriderapi->getAll();
+$rides = $freeriderapi->getAll();
 
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
+foreach ($rides as $ride) {
+        echo "Origin: " . $ride->origin . "<br />";
+        echo "Destination: " . $ride->destination . "<br />";
+        echo "Start date: " . $ride->startDate . "<br />";
+        echo "End date: " . $ride->endDate . "<br />";
+        echo "Car: " . $ride->carModel . "<br />";
 }
 ```
 
@@ -45,36 +45,36 @@ Hämtar alla resor med angiven destination
 
 #### Användning
 ```php
-$freeriderapi = new freeriderAPI();
+$freerider_api = new freeriderAPI();
 
-$routes = $freeriderapi->getAll();
+$rides = $freeriderapi->getDestination("Stockholm");
 
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
+foreach ($rides as $ride) {
+        echo "Origin: " . $ride->origin . "<br />";
+        echo "Destination: " . $ride->destination . "<br />";
+        echo "Start date: " . $ride->startDate . "<br />";
+        echo "End date: " . $ride->endDate . "<br />";
+        echo "Car: " . $ride->carModel . "<br />";
 }
 ```
 
 ### GetOrigins
 #### Parametrar 
-- $origin - Sökord på avfärdspunkt
+- string $origin - Sökord på avfärdspunkt
 Hämtar alla resor med angiven avfärdspunkt
 
 #### Användning
 ```php
 $freeriderapi = new freeriderAPI();
 
-$routes = $freeriderapi->getAll();
+$rides = $freeriderapi->getOrigin("Stockholm");
 
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
+foreach ($rides as $ride) {
+        echo "Origin: " . $ride->origin . "<br />";
+        echo "Destination: " . $ride->destination . "<br />";
+        echo "Start date: " . $ride->startDate . "<br />";
+        echo "End date: " . $ride->endDate . "<br />";
+        echo "Car: " . $ride->carModel . "<br />";
 }
 ```
 
