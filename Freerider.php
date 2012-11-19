@@ -8,5 +8,18 @@
  */
 class Freerider
 {
+    public $destination = null;
+    public $origin = null;
+    public $startDate = null;
+    public $endDate = null;
+    public $carModel = null;
 
+    public function __construct($destination, $origin, $startDate, $endDate, $carModel)
+    {
+        $this->destination = $destination;
+        $this->origin = $origin;
+        $this->startDate = $startDate;
+        $this->endDate = $endDate;
+        $this->carModel = $carModel;
+    }
 }
