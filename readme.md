@@ -1,15 +1,27 @@
 # Freerider API
 
-Med detta inofficiella API kan man hämta tillgängliga bilar hos Hertz Freerider.
+Detta inofficiella Hertz Freerider PHP API erbjuder möjligheten att hämta information om lediga hyrbilar.
+Funktionalitet som ev tillkommer senare:
+- Tillhandahålla länk till boknings-sidan för respektive bil
+- Tillhandahålla information om hertz-stationerna
+- Funktionalitet för bokning
 
-## Hertz Freerider
-Hertz Freerider är en tjänst som erbjuder gratis one-way-transfers från olika Hertz-stationer i Sverige.
+
+## Vad är Hertz Freerider?
+[Hertz Freerider](http://www.hertzfreerider.se) är en tjänst som erbjuder gratis one-way-transfers från och till olika Hertz-stationer i Sverige.
 
 ## Funktionalitet
-APIet möjliggör att hämta samtliga resor samt söka på destination och startpunkt.
+För att hämta aktuella hyrbilar tillhandahåller APIet tre metoder med följande funktionalitet
+- Hämta **samtliga** bilar
+- Hämta bilar som ska köras **ifrån** en viss station
+- Hämta bilar som ska köras **till** en viss station
 
 ## Installation
-APIet installeras genom att inkludera filen FreeriderAPI.php. För att använda APIet instantieras klassen FreeriderAPI som tillhandahåller tre metoder för att söka resor.
+APIet installeras genom att ladda ned samtliga filer och sedan inkludera filen FreeriderAPI.php i sitt projekt.
+```php
+include_once("FreeriderAPI.php");
+...
+```
 
 ## Metoder
 ### GetAll
@@ -17,57 +29,58 @@ Hämtar samtliga resor
 
 #### Användning
 ```php
-$freeriderapi = new freeriderAPI();
+$freerider_api = new freeriderAPI();
 
-$routes = $freeriderapi->getAll();
+$rides = $freeriderapi->getAll();
 
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
+foreach ($rides as $ride) {
+        echo "Origin: " . $ride->origin . "<br />";
+        echo "Destination: " . $ride->destination . "<br />";
+        echo "Start date: " . $ride->startDate . "<br />";
+        echo "End date: " . $ride->endDate . "<br />";
+        echo "Car: " . $ride->carModel . "<br />";
 }
 ```
 
 ### GetDestinations
-#### Parametrar: $destination - Sökord på destination
+#### Parametrar
+- string $destination - Sökord på destination
 Hämtar alla resor med angiven destination
 
 #### Användning
 ```php
-$freeriderapi = new freeriderAPI();
+$freerider_api = new freeriderAPI();
 
-$routes = $freeriderapi->getAll();
+$rides = $freeriderapi->getDestination("Stockholm");
 
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
+foreach ($rides as $ride) {
+        echo "Origin: " . $ride->origin . "<br />";
+        echo "Destination: " . $ride->destination . "<br />";
+        echo "Start date: " . $ride->startDate . "<br />";
+        echo "End date: " . $ride->endDate . "<br />";
+        echo "Car: " . $ride->carModel . "<br />";
 }
 ```
 
 ### GetOrigins
-#### Parametrar: $destination - Sökord på avfärdspunkt
+#### Parametrar 
+- string $origin - Sökord på avfärdspunkt
 Hämtar alla resor med angiven avfärdspunkt
 
 #### Användning
 ```php
 $freeriderapi = new freeriderAPI();
 
-$routes = $freeriderapi->getAll();
+$rides = $freeriderapi->getOrigin("Stockholm");
 
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
+foreach ($rides as $ride) {
+        echo "Origin: " . $ride->origin . "<br />";
+        echo "Destination: " . $ride->destination . "<br />";
+        echo "Start date: " . $ride->startDate . "<br />";
+        echo "End date: " . $ride->endDate . "<br />";
+        echo "Car: " . $ride->carModel . "<br />";
 }
 ```
-
 
 ### Returnerad data
 Samtliga metoder returnerar en array innehållandes objekt av typen Freerider.
@@ -81,21 +94,12 @@ Freerider-objekten innehåller följande egenskaper
 - endDate - Datum för senast bokning
 - carModel - Information om hyrbilen
 
-## Användning
-```php
-$freeriderapi = new freeriderAPI();
+## Om APIet
+### Tekniker
+Skrapningen av Hertz Freerider's webbplats sker med hjälp av hjälpbiblioteket [Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/).
 
-$routes = $freeriderapi->getAll();
-
-foreach ($result as $freeride) {
-        echo "Origin: " . $freeride->origin . "<br />";
-        echo "Destination: " . $freeride->destination . "<br />";
-        echo "Start date: " . $freeride->startDate . "<br />";
-        echo "End date: " . $freeride->endDate . "<br />";
-        echo "Car: " . $freeride->carModel . "<br />";
-}
-```
-
+### Jag
+APIet är skapat av mig, Hans Bentlöv, i studiesyfte under kursen Webbutveckling med PHP II på Linnéuniversitetet i Kalmar.
 
 
 
