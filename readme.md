@@ -2,6 +2,7 @@
 
 Detta inofficiella Hertz Freerider PHP API erbjuder möjligheten att hämta information om lediga hyrbilar.
 Funktionalitet som ev tillkommer senare:
+- Getters istället för att hämta direkt från medlemsvariablerna
 - Tillhandahålla länk till boknings-sidan för respektive bil
 - Tillhandahålla information om hertz-stationerna
 - Funktionalitet för bokning
@@ -88,15 +89,16 @@ Hittas inga resultat i sökningen resulteras en tom array
 
 #### Freerider-objekt
 Freerider-objekten innehåller följande egenskaper
-- origin - Utgångspunkt
-- destination - Mål
-- startDate - Datum för tidigast bokning
-- endDate - Datum för senast bokning
-- carModel - Information om hyrbilen
+- origin - Utgångspunkt (sträng, t.ex "Stockholm")
+- destination - Mål (sträng, t.ex "Kalmar")
+- startDate - Datum för tidigast bokning (sträng, format: "åååå-mm-dd", t.ex "2012-11-20")
+- endDate - Datum för senast bokning (sträng, format: "åååå-mm-dd", t.ex "2012-11-29")
+- carModel - Information om hyrbilen (sträng, formatet varierar, t.ex "Volvo V70")
 
 ## Om APIet
 ### Tekniker
-Skrapningen av Hertz Freerider's webbplats sker med hjälp av hjälpbiblioteket [Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/).
+Skrapningen av Hertz Freerider's webbplats sker med hjälp av hjälpbiblioteket [Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/). Testningen är genomförd med hjälp av (SimpleTest)[http://www.simpletest.org/].
+Båda bilbioteken är inkluderade i repositoriet.
 
 ### Jag
 APIet är skapat av mig, Hans Bentlöv, i studiesyfte under kursen Webbutveckling med PHP II på Linnéuniversitetet i Kalmar.
