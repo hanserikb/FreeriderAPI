@@ -1,5 +1,5 @@
 <?php
-    include_once("FreeriderAPI.php");
+    require_once("FreeriderAPI.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@
 <body>
 <?php
     $foo = new FreeriderAPI();
-    $result = $foo->getOrigin("stockholm");
+    $result = $foo->get_all();
 
     foreach ($result as $freeride) {
         echo "Origin: " . $freeride->origin . "<br />";

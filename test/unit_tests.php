@@ -1,14 +1,14 @@
 <?php
-
 require_once("simpletest/autorun.php");
-require_once("../Freerider.php");
 require_once("../FreeriderAPI.php");
+require_once("../Freerider.php");
+require_once("../backend/freeriderBackend.php");
 
 class FreeriderAPITests extends UnitTestCase
 {
     // Private members
-    private $freerider = null;
-    private $freeriderAPI = null;
+    private $freerider;
+    private $freeriderAPI;
 
     function setUp()
     {
@@ -57,7 +57,7 @@ class FreeriderAPITests extends UnitTestCase
      */
     function testGetAll()
     {
-        $result = $this->freeriderAPI->getAll();
+        $result = $this->freeriderAPI->get_all();
 
         // Testar om en array returneras
         $this->assertIsA($result, "Array", "Return value is not an array");
@@ -76,7 +76,7 @@ class FreeriderAPITests extends UnitTestCase
     function testGetDestination()
     {
         // Gör ett anrop mot APIet med "Stockholm" som argument
-        $result = $this->freeriderAPI->getDestination("Stockholm");
+        $result = $this->freeriderAPI->get_by_destination("Luleå");
 
         // Return an array
         $this->assertEqual(is_array($result), "Did not return an array");
@@ -88,16 +88,16 @@ class FreeriderAPITests extends UnitTestCase
         $this->assertIsA($result[0], "Freerider", "Array didnt contain Freerider object");
 
         // The array contains a Freerider object with Destination property containing "Stockholm"
-        $this->assertPattern("/Stockholm/i", $result[0]->destination, "Destination is not Stockholm");
+        $this->assertPattern("/Luleå/i", $result[0]->destination, "Destination is not Luleå");
     }
 
     /*
      * Tests if the origin-search works
      */
-    function testGetOrigin()
+    function testGetDeparture()
     {
         // Make a request to the API with "Stockholm" as search parameter
-        $result = $this->freeriderAPI->getOrigin("Stockholm");
+        $result = $this->freeriderAPI->get_by_departure("Stockholm");
 
         // Return an array
         $this->assertEqual(is_array($result), "Did not return an array");

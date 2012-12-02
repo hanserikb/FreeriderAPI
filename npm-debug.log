@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'ruby' ]
+2 info using npm@1.1.65
+3 info using node@v0.8.14
+4 verbose read json /Users/HansBentlov/Webbprogrammering/FreeriderAPI/package.json
+5 verbose read json /Users/HansBentlov/Webbprogrammering/FreeriderAPI/package.json
+6 verbose cache add [ 'ruby', null ]
+7 silly cache add name=undefined spec="ruby" args=["ruby",null]
+8 verbose parsed url { pathname: 'ruby', path: 'ruby', href: 'ruby' }
+9 silly lockFile 18e40e14-ruby ruby
+10 verbose lock ruby /Users/HansBentlov/.npm/18e40e14-ruby.lock
+11 silly lockFile 18e40e14-ruby ruby
+12 verbose addNamed [ 'ruby', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile f07098c3-ruby ruby@
+15 verbose lock ruby@ /Users/HansBentlov/.npm/f07098c3-ruby.lock
+16 silly addNameRange { name: 'ruby', range: '', hasData: false }
+17 verbose url raw ruby
+18 verbose url resolving [ 'https://registry.npmjs.org/', './ruby' ]
+19 verbose url resolved https://registry.npmjs.org/ruby
+20 info trying registry request attempt 1 at 13:52:45
+21 http GET https://registry.npmjs.org/ruby
+22 http 404 https://registry.npmjs.org/ruby
+23 silly registry.get cb [ 404,
+23 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+23 silly registry.get     date: 'Wed, 21 Nov 2012 12:52:17 GMT',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'content-length': '52',
+23 silly registry.get     'cache-control': 'must-revalidate' } ]
+24 silly lockFile f07098c3-ruby ruby@
+25 error 404 'ruby' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 11.4.2
+27 error command "node" "/usr/local/bin/npm" "install" "ruby"
+28 error cwd /Users/HansBentlov/Webbprogrammering/FreeriderAPI
+29 error node -v v0.8.14
+30 error npm -v 1.1.65
+31 error code E404
+32 verbose exit [ 1, true ]

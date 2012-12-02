@@ -1,4 +1,6 @@
 <?php
+require_once('interface/iFreerider.php');
+
 /**
  * Created by JetBrains PhpStorm.
  * User: HansBentlov
@@ -6,7 +8,7 @@
  * Time: 12:03
  * To change this template use File | Settings | File Templates.
  */
-class Freerider
+class Freerider //implements iFreerider
 {
     public $destination = null;
     public $origin = null;
@@ -21,5 +23,30 @@ class Freerider
         $this->startDate = $startDate;
         $this->endDate = $endDate;
         $this->carModel = $carModel;
+    }
+
+    public function get_departure()
+    {
+        throw new NotImplementedException("Not yet available");
+    }
+
+    public function get_destination()
+    {
+        throw new NotImplementedException("Not yet available");
+    }
+
+    public function get_start_date()
+    {
+        throw new NotImplementedException("Not yet available");
+    }
+
+    public function get_end_date()
+    {
+        throw new NotImplementedException("Not yet available");
+    }
+
+    public function get_car_model()
+    {
+        throw new NotImplementedException("Not yet available");
     }
 }
