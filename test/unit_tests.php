@@ -12,8 +12,6 @@ class FreeriderAPITests extends UnitTestCase
 
     function setUp()
     {
-        // Instantiating core objects from classes
-
         // New Freerider-object
         $this->freerider = new Freerider("Västerås","Stockholm", date("Y-m-d", strtotime("2012-11-18")), date("Y-m-d", strtotime("2012-11-20")), "Volvo V40");
 
@@ -67,7 +65,6 @@ class FreeriderAPITests extends UnitTestCase
 
         // Testar om arrayen innehåller Freeriderobjekt
         $this->assertIsA($result[0], "Freerider", "Returned array does not contain Freerider objects");
-
     }
 
     /*
@@ -76,7 +73,7 @@ class FreeriderAPITests extends UnitTestCase
     function testGetDestination()
     {
         // Gör ett anrop mot APIet med "Stockholm" som argument
-        $result = $this->freeriderAPI->get_by_destination("Luleå");
+        $result = $this->freeriderAPI->get_by_destination("Stockholm");
 
         // Return an array
         $this->assertEqual(is_array($result), "Did not return an array");
@@ -88,7 +85,7 @@ class FreeriderAPITests extends UnitTestCase
         $this->assertIsA($result[0], "Freerider", "Array didnt contain Freerider object");
 
         // The array contains a Freerider object with Destination property containing "Luleå"
-        $this->assertPattern("/Luleå/i", $result[0]->destination, "Destination is not Luleå");
+        $this->assertPattern("/Stockholm/i", $result[0]->destination, "Destination is not Stockholm");
     }
 
     /*
