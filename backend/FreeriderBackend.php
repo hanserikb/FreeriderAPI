@@ -12,16 +12,21 @@ class FreeriderBackend implements iFreeriderAPI
     // URL to Freerider list site
     private $url = "http://hertzfreerider.se/unauth/list_transport_offer.aspx";
     private $freeriders = array();
-    private $scrapedElements;
+    private $html;
+
+    public function __construct()
+    {
+        // Removed scraping from constructor because of memory problems in PHP 5.2.17
+    }
 
     /**
      * Scrapes Hertz Freerider website and stores the returned elements
      * @return Array with HTML elements.
      */
-    public function __construct()
+    private function scrape_content()
     {
-        $html = file_get_html($this->url);
-        $this->scrapedElements = $html->find("div[id=offers_list] tr[class=highlight]");
+        $this->html = file_get_html($this->url);
+        return $this->html->find("div[id=offers_list] tr[class=highlight]");
     }
 
     /**
@@ -30,14 +35,13 @@ class FreeriderBackend implements iFreeriderAPI
      */
     public function get_all()
     {
-        foreach ($this->scrapedElements as $element) {
-            $origin = $this->get_departure_from_html($element);
-            $destination = $this->get_destination_from_html($element);
-            $startDate = $this->get_start_date_from_html($element);
-            $endDate = $this->get_end_date_from_html($element);
-            $carModel = $this->get_car_model_from_html($element);
-            array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
+        foreach ($this->scrape_content() as $element) {
+            $this->parse_and_push_freerider($element);
+            $element->clear();
+            unset($element);
         }
+        $this->html->clear();
+        unset($this->html);
         return $this->freeriders;
     }
 
@@ -48,15 +52,12 @@ class FreeriderBackend implements iFreeriderAPI
      */
     public function get_by_destination($searchQuery)
     {
-        foreach ($this->scrapedElements as $element) {
+        foreach ($this->scrape_content() as $element) {
             $destination = $this->get_destination_from_html($element);
             if(preg_match("/". $searchQuery ."/i", $destination)){
-                $origin = $this->get_departure_from_html($element);
-                $destination = $destination;
-                $startDate = $this->get_start_date_from_html($element);
-                $endDate = $this->get_end_date_from_html($element);
-                $carModel = $this->get_car_model_from_html($element);
-                array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
+                $this->parse_and_push_freerider($element);
+                $element->clear();
+                unset($element);
             }
         }
         return $this->freeriders;
@@ -69,22 +70,33 @@ class FreeriderBackend implements iFreeriderAPI
      */
     public function get_by_departure($searchQuery)
     {
-        foreach ($this->scrapedElements as $element) {
+        foreach ($this->scrape_content() as $element) {
             $departure = $this->get_departure_from_html($element);
             if(preg_match("/". $searchQuery ."/i", $departure)) {
-                $origin = $this->get_departure_from_html($element);
-                $destination = $departure;
-                $startDate = $this->get_start_date_from_html($element);
-                $endDate = $this->get_end_date_from_html($element);
-                $carModel = $this->get_car_model_from_html($element);
-                array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
+                $this->parse_and_push_freerider($element);
+                $element->clear();
+                unset($element);
             }
         }
         return $this->freeriders;
     }
 
+    /**
+     * Processes the incoming HTML and adds Freerider objects to the private array
+     * @param $element - DOM element
+     */
+    private function parse_and_push_freerider($element)
+    {
+        $origin = $this->get_departure_from_html($element);
+        $destination = $this->get_destination_from_html($element);
+        $startDate = $this->get_start_date_from_html($element);
+        $endDate = $this->get_end_date_from_html($element);
+        $carModel = $this->get_car_model_from_html($element);
+        array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
+    }
+
     /*
-     * Helper functions to parse the HTML
+     * Helper methods to parse the HTML
      */
     private function get_departure_from_html($html)
     {
