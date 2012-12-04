@@ -37,7 +37,6 @@ class FreeriderBackend implements iFreeriderAPI
             $endDate = $this->get_end_date_from_html($element);
             $carModel = $this->get_car_model_from_html($element);
             array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
-            $element->clear();
         }
         return $this->freeriders;
     }
