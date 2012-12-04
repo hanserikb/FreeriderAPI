@@ -87,7 +87,7 @@ class FreeriderAPITests extends UnitTestCase
         // The array contains a Freerider object
         $this->assertIsA($result[0], "Freerider", "Array didnt contain Freerider object");
 
-        // The array contains a Freerider object with Destination property containing "Stockholm"
+        // The array contains a Freerider object with Destination property containing "Luleå"
         $this->assertPattern("/Luleå/i", $result[0]->destination, "Destination is not Luleå");
     }
 

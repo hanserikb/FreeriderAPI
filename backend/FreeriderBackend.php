@@ -31,12 +31,13 @@ class FreeriderBackend implements iFreeriderAPI
     public function get_all()
     {
         foreach ($this->scrapedElements as $element) {
-            $origin = $element->find("a")[0]->plaintext;
-            $destination = $element->find("a")[1]->plaintext;
-            $startDate = $element->nextSibling()->find("td span")[0]->plaintext;
-            $endDate = $element->nextSibling()->find("td span")[1]->plaintext;
-            $carModel = $element->nextSibling()->find("td span")[2]->plaintext;
+            $origin = $this->get_departure_from_html($element);
+            $destination = $this->get_destination_from_html($element);
+            $startDate = $this->get_start_date_from_html($element);
+            $endDate = $this->get_end_date_from_html($element);
+            $carModel = $this->get_car_model_from_html($element);
             array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
+            $element->clear();
         }
         return $this->freeriders;
     }
@@ -49,12 +50,13 @@ class FreeriderBackend implements iFreeriderAPI
     public function get_by_destination($searchQuery)
     {
         foreach ($this->scrapedElements as $element) {
-            if(preg_match("/". $searchQuery ."/i", $element->find("a")[1]->plaintext)){
-                $origin = $element->find("a")[0]->plaintext;
-                $destination = $element->find("a")[1]->plaintext;
-                $startDate = $element->nextSibling()->find("td span")[0]->plaintext;
-                $endDate = $element->nextSibling()->find("td span")[1]->plaintext;
-                $carModel = $element->nextSibling()->find("td span")[2]->plaintext;
+            $destination = $this->get_destination_from_html($element);
+            if(preg_match("/". $searchQuery ."/i", $destination)){
+                $origin = $this->get_departure_from_html($element);
+                $destination = $destination;
+                $startDate = $this->get_start_date_from_html($element);
+                $endDate = $this->get_end_date_from_html($element);
+                $carModel = $this->get_car_model_from_html($element);
                 array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
             }
         }
@@ -69,15 +71,49 @@ class FreeriderBackend implements iFreeriderAPI
     public function get_by_departure($searchQuery)
     {
         foreach ($this->scrapedElements as $element) {
-            if(preg_match("/". $searchQuery ."/i", $element->find("a")[0]->plaintext)){
-                $origin = $element->find("a")[0]->plaintext;
-                $destination = $element->find("a")[1]->plaintext;
-                $startDate = $element->nextSibling()->find("td span")[0]->plaintext;
-                $endDate = $element->nextSibling()->find("td span")[1]->plaintext;
-                $carModel = $element->nextSibling()->find("td span")[2]->plaintext;
+            $departure = $this->get_departure_from_html($element);
+            if(preg_match("/". $searchQuery ."/i", $departure)) {
+                $origin = $this->get_departure_from_html($element);
+                $destination = $departure;
+                $startDate = $this->get_start_date_from_html($element);
+                $endDate = $this->get_end_date_from_html($element);
+                $carModel = $this->get_car_model_from_html($element);
                 array_push($this->freeriders, new Freerider($origin, $destination, $startDate, $endDate, $carModel));
             }
         }
         return $this->freeriders;
+    }
+
+    /*
+     * Helper functions to parse the HTML
+     */
+    private function get_departure_from_html($html)
+    {
+        $element = $html->find("a");
+        return $element[0]->plaintext;
+    }
+
+    private function get_destination_from_html($html)
+    {
+        $element = $html->find("a");
+        return $element[1]->plaintext;
+    }
+
+    private function get_start_date_from_html($html)
+    {
+        $element = $html->nextSibling()->find("td span");
+        return $element[0]->plaintext;
+    }
+
+    private function get_end_date_from_html($html)
+    {
+        $element = $html->nextSibling()->find("td span");
+        return $element[1]->plaintext;
+    }
+
+    private function get_car_model_from_html($html)
+    {
+        $element = $html->nextSibling()->find("td span");
+        return $element[2]->plaintext;
     }
 }
