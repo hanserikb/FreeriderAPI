@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44841b04-d53c-43c9-909d-253cce56b5c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freerider.php" afterPath="$PROJECT_DIR$/Freerider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freeriderAPI.php" afterPath="$PROJECT_DIR$/freeriderAPI.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit_tests.php" afterPath="$PROJECT_DIR$/test/unit_tests.php" />
     </list>
     <ignored path="FreeriderAPI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,10 +25,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="freeriderBackend.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="freeriderBackend.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/freeriderBackend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="113" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.4888179">
+            <state line="1" column="35" selection-start="41" selection-end="41" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -34,7 +37,7 @@
       <file leaf-file-name="simple_html_dom.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/simple_html_dom.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1497" column="20" selection-start="55233" selection-end="55233" vertical-scroll-proportion="-20.923077">
+            <state line="71" column="1" selection-start="3770" selection-end="3770" vertical-scroll-proportion="-21.576923">
               <folding />
             </state>
           </provider>
@@ -43,16 +46,7 @@
       <file leaf-file-name="unit_tests.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit_tests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="2658" selection-end="2658" vertical-scroll-proportion="-31.384615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="freeriderAPI.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/freeriderAPI.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="24" selection-start="537" selection-end="537" vertical-scroll-proportion="-12.423077">
+            <state line="3" column="38" selection-start="163" selection-end="163" vertical-scroll-proportion="-1.9615384">
               <folding />
             </state>
           </provider>
@@ -72,7 +66,16 @@
       <file leaf-file-name="Freerider.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Freerider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="481" selection-end="481" vertical-scroll-proportion="-10.0">
+            <state line="1" column="35" selection-start="41" selection-end="41" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="freeriderAPI.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/freeriderAPI.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="35" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0543131">
               <folding />
             </state>
           </provider>
@@ -107,11 +110,12 @@
         <option value="$PROJECT_DIR$/interface/iFreeriderAPI.php" />
         <option value="$PROJECT_DIR$/interface/iFreerider.php" />
         <option value="$PROJECT_DIR$/API.php" />
-        <option value="$PROJECT_DIR$/freeriderAPI.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/backend/simple_html_dom.php" />
+        <option value="$PROJECT_DIR$/backend/freeriderBackend.php" />
         <option value="$PROJECT_DIR$/test/unit_tests.php" />
         <option value="$PROJECT_DIR$/Freerider.php" />
-        <option value="$PROJECT_DIR$/backend/freeriderBackend.php" />
+        <option value="$PROJECT_DIR$/freeriderAPI.php" />
       </list>
     </option>
   </component>
@@ -415,14 +419,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/simple_html_dom.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1497" column="20" selection-start="55233" selection-end="55233" vertical-scroll-proportion="-20.923077">
+        <state line="71" column="1" selection-start="3770" selection-end="3770" vertical-scroll-proportion="-21.576923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freeriderAPI.php">
+    <entry file="file://$PROJECT_DIR$/backend/freeriderBackend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="24" selection-start="537" selection-end="537" vertical-scroll-proportion="-12.423077">
+        <state line="1" column="35" selection-start="41" selection-end="41" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit_tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="38" selection-start="163" selection-end="163" vertical-scroll-proportion="-1.9615384">
           <folding />
         </state>
       </provider>
@@ -445,21 +456,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Freerider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="481" selection-end="481" vertical-scroll-proportion="-10.0">
+        <state line="1" column="35" selection-start="41" selection-end="41" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit_tests.php">
+    <entry file="file://$PROJECT_DIR$/freeriderAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2658" selection-end="2658" vertical-scroll-proportion="-31.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/freeriderBackend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="113" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.4888179">
+        <state line="2" column="35" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0543131">
           <folding />
         </state>
       </provider>

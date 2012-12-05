@@ -1,5 +1,5 @@
 <?php
-require_once("simple_html_dom.php");
+require_once(dirname(__FILE__) . "/simple_html_dom.php");
 require_once(dirname(__FILE__) . "/../interface/iFreeriderAPI.php");
 require_once(dirname(__FILE__) . "/../Freerider.php");
 /**

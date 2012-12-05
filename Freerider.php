@@ -1,5 +1,5 @@
 <?php
-require_once('interface/iFreerider.php');
+require_once(dirname(__FILE__) . '/interface/iFreerider.php');
 
 class Freerider //implements iFreerider
 {

@@ -1,8 +1,7 @@
 <?php
-require_once("simpletest/autorun.php");
-require_once("../FreeriderAPI.php");
-require_once("../Freerider.php");
-require_once("../backend/freeriderBackend.php");
+require_once(dirname(__FILE__) . "/simpletest/autorun.php");
+require_once(dirname(__FILE__) . "/../FreeriderAPI.php");
+require_once(dirname(__FILE__) . "/../Freerider.php");
 
 class FreeriderAPITests extends UnitTestCase
 {

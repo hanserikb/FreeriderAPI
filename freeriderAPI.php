@@ -1,6 +1,6 @@
 <?php
-require_once("backend/freeriderBackend.php");
-require_once("interface/iFreeriderAPI.php");
+require_once(dirname(__FILE__) . "/backend/freeriderBackend.php");
+require_once(dirname(__FILE__) . "/interface/iFreeriderAPI.php");
 
 class freeriderAPI implements iFreeriderAPI {
 
